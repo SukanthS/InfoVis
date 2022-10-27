@@ -12,7 +12,7 @@
     <script src="https://js.arcgis.com/4.24/"></script>
 
     <!-- INITIAL MAP -->
-    <script>
+    <!-- <script>
       require([
         "esri/WebMap",
         "esri/views/MapView",
@@ -226,7 +226,225 @@
           );
         });
       });
+    </script> -->
+
+    <script>
+      require([
+        "esri/WebMap",
+        "esri/views/MapView",
+        "esri/layers/FeatureLayer",
+        "esri/renderers/DotDensityRenderer",
+        "esri/widgets/Legend",
+        "esri/widgets/Bookmarks",
+        "esri/widgets/Expand"
+      ], (WebMap, MapView, FeatureLayer, DotDensityRenderer, Legend, Bookmarks, Expand) => {
+        const map = new WebMap({
+          portalItem: {
+            id: "56b5bd522c52409c90d902285732e9f1"
+          }
+        });
+
+        const view = new MapView({
+          container: "viewDiv",
+          map: map,
+          highlightOptions: {
+            fillOpacity: 0,
+            color: [50, 50, 50]
+          },
+          popup: {
+            dockEnabled: true,
+            dockOptions: {
+              position: "top-right",
+              breakpoint: false
+            }
+          },
+          constraints: {
+            maxScale: 35000
+          }
+        });
+
+        view.when().then(() => {
+          const dotDensityRenderer = new DotDensityRenderer({
+            dotValue: 100,
+            outline: null,
+            referenceScale: 577790,  // 1:577,790 view scale
+            legendOptions: {
+              unit: "mm"
+            },
+            attributes: [
+              {
+                field: "B03002_003E",
+                color: "#f23c3f",
+                label: "Rain Occurance"
+              },
+              {
+                field: "B03002_012E",
+                color: "#e8ca0d",
+                label: "Heavy rain"
+              },
+              {
+                field: "B03002_004E",
+                color: "#00b6f1",
+                label: "Moderate rain"
+              },
+              {
+                field: "B03002_006E",
+                color: "#32ef94",
+                label: "Light rain"
+              },
+              {
+                field: "B03002_005E",
+                color: "#ff7fe9",
+                label: "Traffic frequency"
+              },
+              {
+                field: "B03002_007E",
+                color: "#e2c4a5",
+                label: "Heavy traffic"
+              },
+              {
+                field: "B03002_008E",
+                color: "#ff6a00",
+                label: "Moderate traffic"
+              },
+              {
+                field: "B03002_009E",
+                color: "#96f7ef",
+                label: "Light traffic"
+              }
+            ]
+          });
+
+          // Add renderer to the layer and define a popup template
+          const url =
+            "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Population_by_Race_and_Hispanic_Origin_Boundaries/FeatureServer/2";
+          const layer = new FeatureLayer({
+            url: url,
+            minScale: 20000000,
+            maxScale: 35000,
+            title: "Rainfall Distribution",
+            popupTemplate: {
+              title: "{County}, {State}",
+              content: [
+              {
+                  type: "media",
+                  mediaInfos: [
+                    {
+                      title: "Description of the selected area",
+                      type: "bar-chart",
+                      value: {
+                        fields: [
+                          "B03002_003E",
+                          "B03002_012E",
+                          "B03002_004E",
+                          "B03002_006E",
+                          "B03002_005E",
+                          "B03002_007E",
+                          "B03002_008E",
+                          "B03002_008E",
+                          "B03002_009E"
+                        ],
+                        tooltipField: "<field name>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  type: "fields",
+                }
+              ],
+              fieldInfos: [
+                {
+                  fieldName: "B03002_003E",
+                  label: "Rain Occurance",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_012E",
+                  label: "Heavy rain",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_004E",
+                  label: "Moderate rain",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_006E",
+                  label: "Light rain",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_005E",
+                  label: "Traffic frequency",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_007E",
+                  label: "Heavy traffic",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_008E",
+                  label: "Moderate traffic",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  },
+                },
+                {
+                  fieldName: "B03002_009E",
+                  label: "Light traffic",
+                  format: {
+                    digitSeparator: true,
+                    places: 0,
+                  }
+                }
+              ]
+            },
+            renderer: dotDensityRenderer
+          });
+
+          map.add(layer);
+
+          view.ui.add(
+            [
+              new Expand({
+                view: view,
+                content: new Legend({ view: view }),
+                group: "top-left",
+                expanded: true
+              }),
+              // new Expand({
+              //   view: view,
+              //   content: new Bookmarks({ view: view }),
+              //   group: "top-left"
+              // })
+            ],
+            "top-left"
+          );
+        });
+      });
     </script>
+
 
     <!-- OTHER MAP -->
     <!-- <script>
