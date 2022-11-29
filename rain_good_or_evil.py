@@ -4,14 +4,11 @@ import plotly.express as px
 import pandas as pd              
 
 
-
-
 df = pd.read_csv("https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Other/Dash_Introduction/intro_bees.csv")
 
 df = df.groupby(['State', 'ANSI', 'Affected by', 'Year', 'state_code'])[['Pct of Colonies Impacted']].mean()
 df.reset_index(inplace=True)
 print(df[:5])
-
 
 
 
@@ -30,6 +27,8 @@ dropdown = dcc.Dropdown(
                  value=2015,
                  style={'width': "40%"})
 
+distplot = dcc.Graph(figure={})
+
 
 
 
@@ -44,6 +43,9 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([dropdown], width=6)
     ], justify='center'),
+    dbc.Row([
+        dbc.Col([distplot]),
+    ])
 ], fluid=True)
 
 
@@ -52,6 +54,7 @@ app.layout = dbc.Container([
 @app.callback(
     Output(graph_left, 'figure'),
     Output(graph_right, 'figure'),
+    Output(distplot, "figure"), 
     Input(dropdown, 'value')
 )
 def update_graph(option_slctd):
@@ -74,7 +77,15 @@ def update_graph(option_slctd):
         labels={'Pct of Colonies Impacted': '% of Bee Colonies'},
         template='plotly_dark'
     )
-    return fig, fig  
+
+    df2 = px.data.tips() # replace with your own data source
+    fig2 = px.histogram(
+        df2, x="total_bill", y="tip", color="sex",
+        range_x=[-5, 60],
+        hover_data=df2.columns)
+
+
+    return fig, fig, fig2
 
 
 if __name__=='__main__':
