@@ -4,9 +4,9 @@ import plotly.express as px
 import pandas as pd              
 
 
-df = pd.read_csv("https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Other/Dash_Introduction/intro_bees.csv")
+df = pd.read_csv("data_rain_csv.csv")
 
-df = df.groupby(['State', 'ANSI', 'Affected by', 'Year', 'state_code'])[['Pct of Colonies Impacted']].mean()
+df = df.groupby(['State', 'Month','value', 'state_code'])[['Rain']].mean()
 df.reset_index(inplace=True)
 print(df[:5])
 
@@ -19,12 +19,20 @@ graph_left = dcc.Graph(figure={})
 graph_right = dcc.Graph(figure={})
 dropdown = dcc.Dropdown(
                  options=[
-                     {"label": "2015", "value": 2015},
-                     {"label": "2016", "value": 2016},
-                     {"label": "2017", "value": 2017},
-                     {"label": "2018", "value": 2018}],
+                     {"label": "January", "value": 1},
+                     {"label": "February", "value": 2},
+                     {"label": "March", "value": 3},
+                     {"label": "April", "value": 4},
+                     {"label": "May", "value": 5},
+                     {"label": "June", "value": 6},
+                     {"label": "July", "value": 7},
+                     {"label": "August", "value": 8},
+                     {"label": "September", "value": 9},
+                     {"label": "October", "value": 10},
+                     {"label": "November", "value": 11},
+                     {"label": "December", "value": 12}],
                  multi=False,
-                 value=2015,
+                 value=1,
                  style={'width': "40%"})
 
 distplot = dcc.Graph(figure={})
@@ -62,8 +70,7 @@ def update_graph(option_slctd):
     print(type(option_slctd))
 
     dff = df.copy()
-    dff = dff[dff["Year"] == option_slctd]
-    dff = dff[dff["Affected by"] == "Varroa_mites"]
+    dff = dff[dff["value"] == option_slctd]
 
     # Plotly Express
     fig = px.choropleth(
@@ -71,18 +78,16 @@ def update_graph(option_slctd):
         locationmode='USA-states',
         locations='state_code',
         scope="usa",
-        color='Pct of Colonies Impacted',
-        hover_data=['State', 'Pct of Colonies Impacted'],
+        color='Rain',
+        hover_data=['State', 'Rain'],
         color_continuous_scale=px.colors.sequential.YlOrRd,
-        labels={'Pct of Colonies Impacted': '% of Bee Colonies'},
+        labels={'Rain': 'Amount of rainfall'},
         template='plotly_dark'
     )
 
-    df2 = px.data.tips() # replace with your own data source
     fig2 = px.histogram(
-        df2, x="total_bill", y="tip", color="sex",
-        range_x=[-5, 60],
-        hover_data=df2.columns)
+        df, x="State", y="Rain", color="Month",
+        hover_data=df.columns)
 
 
     return fig, fig, fig2
