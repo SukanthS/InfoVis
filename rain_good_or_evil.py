@@ -29,7 +29,24 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 mytitle = dcc.Markdown(children='Rain: Good or Evil? A Geospatial Implementation With Customisable Glyphs')
 graph_left = dcc.Graph(figure={})
 graph_right = dcc.Graph(figure={})
-dropdown = dcc.Dropdown(
+dropdown_left = dcc.Dropdown(
+                 options=[
+                     {"label": "January", "value": 1},
+                     {"label": "February", "value": 2},
+                     {"label": "March", "value": 3},
+                     {"label": "April", "value": 4},
+                     {"label": "May", "value": 5},
+                     {"label": "June", "value": 6},
+                     {"label": "July", "value": 7},
+                     {"label": "August", "value": 8},
+                     {"label": "September", "value": 9},
+                     {"label": "October", "value": 10},
+                     {"label": "November", "value": 11},
+                     {"label": "December", "value": 12}],
+                 multi=False,
+                 value=1,
+                 style={'width': "40%"})
+dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "January", "value": 1},
                      {"label": "February", "value": 2},
@@ -52,6 +69,7 @@ distplot = dcc.Graph(figure={})
 
 
 
+
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([mytitle])
@@ -61,7 +79,8 @@ app.layout = dbc.Container([
         dbc.Col([graph_right]),
     ]),
     dbc.Row([
-        dbc.Col([dropdown], width=6)
+        dbc.Col([dropdown_left], width=6),
+        dbc.Col([dropdown_right], width=6)
     ], justify='center'),
     dbc.Row([
         dbc.Col([distplot]),
@@ -69,23 +88,45 @@ app.layout = dbc.Container([
 ], fluid=True)
 
 
+@app.callback(
+    Output(graph_right, 'figure'),
+    Input(dropdown_right, 'value')
+)
+def update_graph_right(option_slcted_right):
+    print(option_slcted_right)
+    print(type(option_slcted_right))
+    dff = df.copy()
+    dff = dff[dff["value"] == option_slcted_right]
+    fig_right = px.choropleth(
+        data_frame=dff,
+        locationmode='USA-states',
+        locations='state_code',
+        scope="usa",
+        color='Rain',
+        hover_data=['State', 'Rain'],
+        color_continuous_scale=px.colors.sequential.YlOrRd,
+        labels={'Rain': 'Amount of rainfall'},
+        template='plotly_dark'
+    )
+
+    return fig_right
+
 
 
 @app.callback(
     Output(graph_left, 'figure'),
-    Output(graph_right, 'figure'),
     Output(distplot, "figure"), 
-    Input(dropdown, 'value')
+    Input(dropdown_left, 'value')
 )
-def update_graph(option_slctd):
-    print(option_slctd)
-    print(type(option_slctd))
+def update_graph_left(option_slctd_left):
+    print(option_slctd_left)
+    print(type(option_slctd_left))
 
     dff = df.copy()
-    dff = dff[dff["value"] == option_slctd]
+    dff = dff[dff["value"] == option_slctd_left]
 
     # Plotly Express
-    fig = px.choropleth(
+    fig_left = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
         locations='state_code',
@@ -102,7 +143,7 @@ def update_graph(option_slctd):
         hover_data=df.columns)
 
 
-    return fig, fig, fig2
+    return fig_left, fig2
 
 
 if __name__=='__main__':
