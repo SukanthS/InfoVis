@@ -1,7 +1,16 @@
 from dash import Dash, dcc, Output, Input  
-import dash_bootstrap_components as dbc    
+import dash_bootstrap_components as dbc   
 import plotly.express as px
-import pandas as pd              
+import pandas as pd      
+      
+# navbar = dbc.NavbarSimple(
+#     children=[
+#         dbc.NavItem(dbc.NavLink("Page 1", href="#")),
+#         dbc.DropdownMenu(
+#             children=[
+#                 dbc.DropdownMenuItem("More pages", header=True),
+#                 dbc.DropdownMenuItem("Page 2", href="#"),
+#                 dbc.DropdownMenuItem("Page 3", href="#"),
 
 
 df = pd.read_csv("data_rain_csv.csv")
@@ -13,8 +22,11 @@ print(df[:5])
 
 
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.SKETCHY])
-mytitle = dcc.Markdown(children='Rain: Good or Evil?')
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+
+
+mytitle = dcc.Markdown(children='Rain: Good or Evil? A Geospatial Implementation With Customisable Glyphs')
 graph_left = dcc.Graph(figure={})
 graph_right = dcc.Graph(figure={})
 dropdown = dcc.Dropdown(
@@ -43,7 +55,7 @@ distplot = dcc.Graph(figure={})
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([mytitle])
-    ], justify='center'),
+    ], className='text-center text-primary mb-2'),
     dbc.Row([
         dbc.Col([graph_left]),
         dbc.Col([graph_right]),
