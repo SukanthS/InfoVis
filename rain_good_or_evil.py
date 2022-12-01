@@ -10,9 +10,9 @@ df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
 df_economic= df.groupby(['State', 'value','Month', 'state_code'])[['economic']].mean()
 df_airline = df.groupby(['State', 'value','Month', 'state_code'])[['Airline']].mean()
-df_water = df.groupby(['State', 'value','Month', 'state_code'])[['Water ']].mean()
+df_water = df.groupby(['State', 'value','Month', 'state_code'])[['Water']].mean()
 df_air = df.groupby(['State', 'value','Month', 'state_code'])[['Air']].mean()
-df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline','Water ','Air'])[['Rain']].mean()
+df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline','Water','Air'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
 df_economic.reset_index(inplace=True)
@@ -196,13 +196,15 @@ app.layout = dbc.Container([
     Output('fill_low_value', 'children'),
     Output('fill_high', 'children'),
     Output('fill_high_value', 'children'),
+    Output(distplot, "figure"), 
     Input(dropdown_right, 'value')
 )
 def update_graph_right(option_slcted_right):
     print(option_slcted_right)
     print(type(option_slcted_right))
     if(option_slcted_right == 1):
-        dff = df_car.copy()              
+        dff = df_car.copy()  
+        flag = "car"            
         print(dff[:5])
         #dff = dff[dff["value"] == option_slcted_right]
         max_value =dff.max().values
@@ -223,6 +225,7 @@ def update_graph_right(option_slcted_right):
             )
     elif(option_slcted_right == 2):
       dff = df_economic.copy()
+      flag = "economic"
       #dff = dff[dff["value"] == option_slcted_right]
       max_value =dff.max().values
       min_value = dff.min().values
@@ -243,6 +246,7 @@ def update_graph_right(option_slcted_right):
 
     elif(option_slcted_right == 3):
       dff = df_airline.copy()
+      flag = 'Airline'
       print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
       max_value =dff.max().values
@@ -264,6 +268,7 @@ def update_graph_right(option_slcted_right):
 
     elif(option_slcted_right == 4):
       dff = df_water.copy()
+      flag = 'Water'
       print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
       max_value =dff.max().values
@@ -275,7 +280,7 @@ def update_graph_right(option_slcted_right):
            locationmode='USA-states',
            locations='state_code',
            scope="usa",
-           color='Water ',
+           color="Water",
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.YlOrRd,
            labels={'car': 'Amount of rainfall'},
@@ -285,6 +290,7 @@ def update_graph_right(option_slcted_right):
 
     elif(option_slcted_right == 5):
       dff = df_air.copy()
+      flag = 'Air'
       print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
       max_value =dff.max().values
@@ -305,7 +311,30 @@ def update_graph_right(option_slcted_right):
     )
 
 
-    return fig_right,min_value[0], min_value[4], max_value[0], max_value[4]
+    fig2 = px.histogram(
+        df, x="State", y=flag, color="Month",
+        hover_data=df.columns)
+    fig2.update_layout(
+        font=dict(
+            family="Lucida Sans",
+            size=12,
+            color="white"
+        ),
+    )
+    fig2.update_layout({
+    'paper_bgcolor': '#152336',
+    'plot_bgcolor':'#152336'
+    })
+    fig2.update_layout(
+        font=dict(
+            family="Lucida Sans",
+            size=12,
+            color="white"
+        ),
+    )
+
+
+    return fig_right,min_value[0], min_value[4], max_value[0], max_value[4], fig2
 
 
 
@@ -315,7 +344,6 @@ def update_graph_right(option_slcted_right):
     Output('rainfall_high_value', 'children'),
     Output('rainfall_low', 'children'),
     Output('rainfall_low_value', 'children'),
-    Output(distplot, "figure"), 
     Output(sunburst, 'figure'),
     Output(scatter, 'figure'), 
     Input(dropdown_scatter, 'value')
@@ -348,29 +376,6 @@ def update_graph_left(option_slctd_left):
     'paper_bgcolor': '#152336'})
 
 
-
-    fig2 = px.histogram(
-        df, x="State", y="Rain", color="Month",
-        hover_data=df.columns)
-    fig2.update_layout(
-        font=dict(
-            family="Lucida Sans",
-            size=12,
-            color="white"
-        ),
-    )
-    fig2.update_layout({
-    'paper_bgcolor': '#152336',
-    'plot_bgcolor':'#152336'
-    })
-    fig2.update_layout(
-        font=dict(
-            family="Lucida Sans",
-            size=12,
-            color="white"
-        ),
-    )
-
     
     fig3 = px.sunburst(df_all, path=['State', 'Month'], values='Rain', color='State') 
 
@@ -382,7 +387,7 @@ def update_graph_left(option_slctd_left):
            size_max=50, range_x=[-300000, 300000], range_y=[-1000000, 4000000])
 
 
-    return fig_left, max_value[0], max_value[4] ,min_value[0], min_value[4],fig2, fig3, fig4
+    return fig_left, max_value[0], max_value[4] ,min_value[0], min_value[4], fig3, fig4
 
 
 if __name__=='__main__':
