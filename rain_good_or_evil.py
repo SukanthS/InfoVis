@@ -9,8 +9,8 @@ df = pd.read_csv("data_rain_csv.csv")
 df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
 df_economic= df.groupby(['State', 'value','Month', 'state_code'])[['economic']].mean()
-df_airline = df.groupby(['State', 'value','Month', 'state_code'])[['airline']].mean()
-df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic'])[['Rain']].mean()
+df_airline = df.groupby(['State', 'value','Month', 'state_code'])[['Airline']].mean()
+df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
 df_economic.reset_index(inplace=True)
@@ -56,6 +56,17 @@ dropdown_right = dcc.Dropdown(
                      ],
                  multi=False,
                  value=3,
+                 style={'width': "40%"})
+
+dropdown_scatter = dcc.Dropdown(
+                 options=[
+                     {'label': i, 'value': i} for i in df_all.State.unique()
+                ],
+                 multi=True,                 
+                 searchable=True,
+                 clearable= True,
+                 placeholder="Select a state",
+                 value='Florida',
                  style={'width': "40%"})
 
 distplot = dcc.Graph(figure={})
@@ -165,6 +176,9 @@ app.layout = dbc.Container([
         dbc.Col([sunburst]),
     ], justify='center'),
     dbc.Row([
+        dbc.Col([dropdown_scatter], width=12),
+    ], justify='center'),
+    dbc.Row([
         dbc.Col([scatter]),
     ], justify='center')  
 ], fluid=True)
@@ -234,7 +248,7 @@ def update_graph_right(option_slcted_right):
            locationmode='USA-states',
            locations='state_code',
            scope="usa",
-           color='airline',
+           color='Airline',
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.YlOrRd,
            labels={'car': 'Amount of rainfall'},
@@ -257,7 +271,8 @@ def update_graph_right(option_slcted_right):
     Output(distplot, "figure"), 
     Output(sunburst, 'figure'),
     Output(scatter, 'figure'), 
-    Input(dropdown_left, 'value')
+    Input(dropdown_scatter, 'value')
+    #Input(dropdown_left, 'value')
 )
 def update_graph_left(option_slctd_left):
 
@@ -312,10 +327,12 @@ def update_graph_left(option_slctd_left):
     
     fig3 = px.sunburst(df_all, path=['State', 'Month'], values='Rain', color='State') 
 
+    dff = df_all.copy()
+    dff = df_all[df_all.State.str.contains('|'.join(option_slctd_left))]
     fig4 = px.scatter(
-        df_all, x="car", y="economic", animation_group="State",
+        dff, x="car", y="economic", animation_group="State",
            size="Rain", color="Month", hover_name="State", facet_col="Month",
-           size_max=0.99999, range_x=[0.00000,0.99999], range_y=[0.00,5000.00])
+           size_max=50, range_x=[-300000, 300000], range_y=[-1000000, 4000000])
 
 
     return fig_left, max_value[0], max_value[4] ,min_value[0], min_value[4],fig2, fig3, fig4
