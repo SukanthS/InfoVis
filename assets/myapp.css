@@ -13,20 +13,18 @@ body{
   color: white;
 }
 
-.bar{
-    margin-top: 1rem;
-}
-
 .mapdrop{
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .mapdrop2{
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.1rem;
 }
 .cardRow{
     background-color: #152336;
+    margin-top: 1rem;
 }
 .cardStyle{
  box-shadow: 0 14px 26px rgba(230,229,229,0.11);
@@ -42,19 +40,29 @@ body{
     background-color: #ffffff;
 }
 
-
 h5{
     text-align: center;
     color: #021429;
     font-weight: bolder;
 }
 
+.bar{
+    margin-top: 1rem;
+}
 .sun{
     margin-top: 1rem;
 }
 
+.scatterDrop{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
 .scatter{
     margin-top: 1rem;
+}
+
+.compare{
+    margin-bottom: 1rem;
 }
 
 

@@ -51,7 +51,7 @@ dropdown_left = dcc.Dropdown(
                      {"label": "December", "value": 12}],
                  multi=False,
                  value=1,
-                 style={'width': "40%"})
+                 style={'width': "75%"})
 dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "Car Accidents", "value": 1},
@@ -62,7 +62,7 @@ dropdown_right = dcc.Dropdown(
                      ],
                  multi=False,
                  value=1,
-                 style={'width': "40%"})
+                 style={'width': "75%"})
 
 dropdown_scatter = dcc.Dropdown(
                  options=[
@@ -73,7 +73,7 @@ dropdown_scatter = dcc.Dropdown(
                  clearable= True,
                  placeholder="Select a state",
                  value='Florida',
-                 style={'width': "40%"})
+                 style={'width': "100%"})
 
 distplot = dcc.Graph(figure={})
 
@@ -98,7 +98,7 @@ card_high_rain=  dbc.Card(
                     
                 ]
             ),
-            className="w-50",
+            className="w-100",
         )
 
 card_low_rain=  dbc.Card(
@@ -117,7 +117,7 @@ card_low_rain=  dbc.Card(
                   
                 ]
             ),
-            className="w-50",
+            className="w-100",
         )
 
 card_low_fill=  dbc.Card(
@@ -135,7 +135,7 @@ card_low_fill=  dbc.Card(
                     ),
                 ]
             ),
-            className="w-50",
+            className="w-100",
         )
 card_high_fill=  dbc.Card(
             dbc.CardBody(
@@ -152,7 +152,7 @@ card_high_fill=  dbc.Card(
                     ),
                 ]
             ),
-            className="w-50",
+            className="w-100",
         )
 
 
@@ -160,34 +160,36 @@ card_high_fill=  dbc.Card(
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col([mytitle])
-    ], className='text-center text-primary mb-2'),
+        dbc.Col([mytitle], className="title")
+    ], className='heading'),
+    dbc.Row([
+        dbc.Col([dropdown_left], className="mapdrop", width=6),
+        dbc.Col([dropdown_right],className="mapdrop2", width=6)
+    ]),
     dbc.Row([
         dbc.Col([graph_left]),
         dbc.Col([graph_right]),
     ]),
-    dbc.Row([
-        dbc.Col([dropdown_left], width=6),
-        dbc.Col([dropdown_right], width=6)
-    ], justify='center'),
       dbc.Row([
-        dbc.Col([card_high_rain]),
-        dbc.Col([card_low_rain]),
-        dbc.Col([card_high_fill]),
-        dbc.Col([card_low_fill]),
-    ]),
+        dbc.Col([card_high_rain], class_name="cardStyle"),
+        dbc.Col([card_low_rain], class_name="cardStyle"),
+        dbc.Col([card_high_fill], class_name="cardStyle"),
+        dbc.Col([card_low_fill], class_name="cardStyle"),
+    ], class_name="cardRow"),
     dbc.Row([
         dbc.Col([distplot]),
+    ], class_name="bar"),
+    dbc.Row([
+        dbc.Col([dropdown_scatter], className="scatterDrop"),
     ]),
     dbc.Row([
-        dbc.Col([sunburst]),
-    ], justify='center'),
-    dbc.Row([
-        dbc.Col([dropdown_scatter], width=12),
-    ], justify='center'),
-    dbc.Row([
-        dbc.Col([scatter]),
-    ], justify='center')  
+        dbc.Col([sunburst], class_name="sun"),
+        dbc.Col([scatter], class_name="scatter"),
+    ], className="compare"),
+    
+    # dbc.Row([
+    #     dbc.Col([scatter]),
+    # ], class_name="scatter", justify='center')  
 ], fluid=True)
 
 
@@ -200,6 +202,7 @@ app.layout = dbc.Container([
     Output(distplot, "figure"), 
     Input(dropdown_right, 'value')
 )
+
 def update_graph_right(option_slcted_right):
     print(option_slcted_right)
     print(type(option_slcted_right))
@@ -208,10 +211,12 @@ def update_graph_right(option_slcted_right):
         flag = "car"            
         print(dff[:5])
         #dff = dff[dff["value"] == option_slcted_right]
-        max_value =dff.max().values
-        min_value = dff.min().values
-        print(max_value)
-        print(min_value)
+        # max_value =dff.max().values
+        # min_value = dff.min().values
+        max_value_state = 'South Carolina'
+        max_value_value = '3874'
+        min_value_state = 'Massachusetts'
+        min_value_value = '129'
         fig_right = px.choropleth(
             data_frame=dff,
             locationmode='USA-states',
@@ -219,7 +224,7 @@ def update_graph_right(option_slcted_right):
             scope="usa",
             color='car',
             hover_data=['State'],
-            color_continuous_scale=px.colors.sequential.YlOrRd,
+            color_continuous_scale=px.colors.sequential.Sunsetdark,
             labels={'Car Accidentts': 'Car Accidents'},
             template='plotly_dark',
             animation_frame='Month'
@@ -228,10 +233,12 @@ def update_graph_right(option_slcted_right):
       dff = df_economic.copy()
       flag = "economic"
       #dff = dff[dff["value"] == option_slcted_right]
-      max_value =dff.max().values
-      min_value = dff.min().values
-      print(max_value)
-      print(min_value)
+    #   max_value =dff.max().values
+    #   min_value = dff.min().values
+      max_value_state = 'California'
+      max_value_value = '2942968.5'
+      min_value_state = 'Vermont'
+      min_value_value = '30094'
       fig_right = px.choropleth(
            data_frame=dff,
            locationmode='USA-states',
@@ -239,7 +246,7 @@ def update_graph_right(option_slcted_right):
            scope="usa",
            color='economic',
            hover_data=['State'],
-           color_continuous_scale=px.colors.sequential.YlOrRd,
+           color_continuous_scale=px.colors.sequential.BuGn,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
            animation_frame='Month'
@@ -250,10 +257,12 @@ def update_graph_right(option_slcted_right):
       flag = 'Airline'
       print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
-      max_value =dff.max().values
-      min_value = dff.min().values
-      print(max_value)
-      print(min_value)
+    #   max_value =dff.max().values
+    #   min_value = dff.min().values
+      max_value_state = 'New York'
+      max_value_value = '112'
+      min_value_state = 'Hawaii'
+      min_value_value = '9'
       fig_right = px.choropleth(
            data_frame=dff,
            locationmode='USA-states',
@@ -261,7 +270,7 @@ def update_graph_right(option_slcted_right):
            scope="usa",
            color='Airline',
            hover_data=['State'],
-           color_continuous_scale=px.colors.sequential.YlOrRd,
+           color_continuous_scale=px.colors.sequential.Magenta,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
            animation_frame='Month'
@@ -272,10 +281,12 @@ def update_graph_right(option_slcted_right):
       flag = 'Water'
       print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
-      max_value =dff.max().values
-      min_value = dff.min().values
-      print(max_value)
-      print(min_value)
+    #   max_value =dff.max().values
+    #   min_value = dff.min().values
+      max_value_state = 'Alaska'
+      max_value_value = '54'
+      min_value_state = 'Iowa'
+      min_value_value = '11'
       fig_right = px.choropleth(
            data_frame=dff,
            locationmode='USA-states',
@@ -283,7 +294,7 @@ def update_graph_right(option_slcted_right):
            scope="usa",
            color="Water",
            hover_data=['State'],
-           color_continuous_scale=px.colors.sequential.YlOrRd,
+           color_continuous_scale=px.colors.sequential.Brwnyl,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
            animation_frame='Month'
@@ -294,10 +305,12 @@ def update_graph_right(option_slcted_right):
       flag = 'Air'
       print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
-      max_value =dff.max().values
-      min_value = dff.min().values
-      print(max_value)
-      print(min_value)
+    #   max_value =dff.max().values
+    #   min_value = dff.min().values
+      max_value_state = 'Utah'
+      max_value_value = '53.2'
+      min_value_state = 'Hawaii'
+      min_value_value = '20.5'
       fig_right = px.choropleth(
            data_frame=dff,
            locationmode='USA-states',
@@ -305,11 +318,14 @@ def update_graph_right(option_slcted_right):
            scope="usa",
            color='Air',
            hover_data=['State'],
-           color_continuous_scale=px.colors.sequential.YlOrRd,
+           color_continuous_scale=px.colors.sequential.Purpor,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
            animation_frame='Month'
     )
+    fig_right.update_layout(geo=dict(bgcolor= '#152236'))   # Left Map Colours
+    fig_right.update_layout({
+    'paper_bgcolor': '#152336'})
 
 
     fig2 = px.histogram(
@@ -326,17 +342,10 @@ def update_graph_right(option_slcted_right):
     'paper_bgcolor': '#152336',
     'plot_bgcolor':'#152336'
     })
-    fig2.update_layout(
-        font=dict(
-            family="Lucida Sans",
-            size=12,
-            color="white"
-        ),
-    )
+   
 
 
-    return fig_right,min_value[0], min_value[4], max_value[0], max_value[4], fig2
-
+    return fig_right,min_value_state, min_value_value, max_value_state, max_value_value, fig2
 
 
 @app.callback(
@@ -370,8 +379,10 @@ def update_graph_left(option_slctd_left,category):
     dff = df_rain.copy()
     #dff = dff[dff["value"] == option_slctd_left]
     # Plotly Express
-    max_value =dff.max().values
-    min_value = dff.min().values
+    max_value_state = 'Louisiana'
+    max_value_value = '0.96'
+    min_value_state = 'Nevada'
+    min_value_value = '0.06'
     fig_left = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
@@ -379,7 +390,7 @@ def update_graph_left(option_slctd_left,category):
         scope="usa",
         color='Rain',
         hover_data=['State'],
-        color_continuous_scale=px.colors.sequential.YlOrRd,
+        color_continuous_scale=px.colors.sequential.Burgyl,
         labels={'Rain': 'Amount of rainfall'},
         template='plotly_dark',
         animation_frame='Month'
@@ -390,21 +401,40 @@ def update_graph_left(option_slctd_left,category):
     'paper_bgcolor': '#152336'})
 
 
-    
-  
-
     dff = df_all.copy()
     dff = df_all[df_all.State.str.contains('|'.join(option_slctd_left))]
 
     fig3 = px.line(dff, x="Rain", y=value, color='State')
+    fig3.update_layout(
+        font=dict(
+            family="Lucida Sans",
+            size=12,
+            color="white"
+        ),
+    )
+    fig3.update_layout({
+    'paper_bgcolor': '#152336',
+    'plot_bgcolor':'#152336'
+    })
 
     fig4 = px.scatter(
-        dff, x="car", y="economic", animation_group="State",
-           size="Rain", color="Month", hover_name="State", facet_col="Month",
-           size_max=50, range_x=[-300000, 300000], range_y=[-1000000, 4000000])
+        dff, x="car", y="economic", animation_group="State", 
+           size="Rain", color="Month", hover_name="State", facet_col="Month", facet_col_wrap=3,
+           size_max=17, range_x=[-100000, 100000], range_y=[-250000, 2000000])
+    fig4.update_layout(
+        font=dict(
+            family="Lucida Sans",
+            size=12,
+            color="white"
+        ),
+    )
+    fig4.update_layout({
+    'paper_bgcolor': '#152336',
+    'plot_bgcolor':'#152336'
+    })
 
 
-    return fig_left, max_value[0], max_value[4] ,min_value[0], min_value[4], fig3, fig4
+    return fig_left, max_value_state, max_value_value , min_value_state, min_value_value, fig3, fig4
 
 
 if __name__=='__main__':
