@@ -3,13 +3,24 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd      
 import plotly.graph_objects as go
+      
+# navbar = dbc.NavbarSimple(
+#     children=[
+#         dbc.NavItem(dbc.NavLink("Page 1", href="#")),
+#         dbc.DropdownMenu(
+#             children=[
+#                 dbc.DropdownMenuItem("More pages", header=True),
+#                 dbc.DropdownMenuItem("Page 2", href="#"),
+#                 dbc.DropdownMenuItem("Page 3", href="#"),
 
 
 df = pd.read_csv("data_rain_csv.csv")
 df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
+df_all = df.groupby(['State', 'value','Month', 'RainTmp','RainTmp2', 'state_code', 'car'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
+df_all.reset_index(inplace=True)
 print(df[:5])
 
 df_bubble = px.data.gapminder().query("year==2007")
@@ -22,10 +33,8 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 
 mytitle = dcc.Markdown(children='Rain: Good or Evil? A Geospatial Implementation With Customisable Glyphs')
-
-graph_left = dcc.Graph (figure={}) 
+graph_left = dcc.Graph(figure={})
 graph_right = dcc.Graph(figure={})
-
 dropdown_left = dcc.Dropdown(
                  options=[
                      {"label": "January", "value": 1},
@@ -43,7 +52,6 @@ dropdown_left = dcc.Dropdown(
                  multi=False,
                  value=1,
                  style={'width': "40%"})
-
 dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "Rain", "value": 1},
@@ -54,6 +62,10 @@ dropdown_right = dcc.Dropdown(
                  style={'width': "40%"})
 
 distplot = dcc.Graph(figure={})
+
+sunburst = dcc.Graph(figure={})
+
+scatter = dcc.Graph(figure={})
 
 
 card_high_rain=  dbc.Card(
@@ -130,15 +142,15 @@ card_low_fill=  dbc.Card(
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([mytitle])
-    ], className='heading'),
+    ], className='text-center text-primary mb-2'),
     dbc.Row([
         dbc.Col([graph_left]),
-        dbc.Col([graph_right])
+        dbc.Col([graph_right]),
     ]),
     dbc.Row([
         dbc.Col([dropdown_left], width=6),
         dbc.Col([dropdown_right], width=6)
-    ]),
+    ], justify='center'),
       dbc.Row([
         dbc.Col([card_high_rain]),
         dbc.Col([card_low_rain]),
@@ -148,9 +160,12 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([distplot]),
     ]),
-  
-        dbc.Col([distplot])
-    ], className='bar')
+    dbc.Row([
+        dbc.Col([sunburst]),
+    ], justify='center'),
+    dbc.Row([
+        dbc.Col([scatter]),
+    ], justify='center')  
 ], fluid=True)
 
 
@@ -165,7 +180,6 @@ def update_graph_right(option_slcted_right):
     if(option_slcted_right == 1):
         dff = df_rain.copy()
         #dff = dff[dff["value"] == option_slcted_right]
-
         max_value =dff.max().values
         min_value = dff.min().values
         print(max_value)
@@ -199,20 +213,18 @@ def update_graph_right(option_slcted_right):
            color_continuous_scale=px.colors.sequential.YlOrRd,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
-           animation_frame='Month'   
+           animation_frame='Month'
     )
 
     return fig_right, max_value[4]
-    fig_right.update_layout(geo=dict(bgcolor= '#152236'))
-    fig_right.update_layout({
-    'paper_bgcolor': 'rgba(0,0,0,0)'
-})
-    return fig_right
+
 
 
 @app.callback(
     Output(graph_left, 'figure'),
     Output(distplot, "figure"), 
+    Output(sunburst, 'figure'),
+    Output(scatter, 'figure'), 
     Input(dropdown_left, 'value')
 )
 def update_graph_left(option_slctd_left):
@@ -222,6 +234,7 @@ def update_graph_left(option_slctd_left):
 
     dff = df_rain.copy()
     #dff = dff[dff["value"] == option_slctd_left]
+    # Plotly Express
     fig_left = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
@@ -237,22 +250,21 @@ def update_graph_left(option_slctd_left):
 
 
 
-    fig_left.update_layout(geo=dict(bgcolor= '#152236'))
-    fig_left.update_layout({
-    'paper_bgcolor': 'rgba(0,0,0,0)'
-})
-
     fig2 = px.histogram(
         df, x="State", y="Rain", color="Month",
-        hover_data=df.columns
-        )
+        hover_data=df.columns)
 
-    fig2.update_layout({
-    'plot_bgcolor': '#152336',
-    'paper_bgcolor': 'rgba(0,0,0,0)'
-})
 
-    return fig_left, fig2
+    
+    fig3 = px.sunburst(df_all, path=['State', 'Month'], values='Rain', color='State') 
+
+    fig4 = px.scatter(
+        df_all, x="car", y="RainTmp2", animation_group="State",
+           size="Rain", color="Month", hover_name="State", facet_col="Month",
+           size_max=0.99999, range_x=[0.00000,0.99999], range_y=[0.00,5000.00])
+
+
+    return fig_left, fig2, fig3, fig4
 
 
 if __name__=='__main__':
