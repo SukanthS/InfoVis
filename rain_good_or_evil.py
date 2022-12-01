@@ -56,7 +56,6 @@ dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "Rain", "value": 1},
                      {"label": "Car", "value": 2},
-                     {"label": "Economic", "value": 2},
                      ],
                  multi=False,
                  value=1,
