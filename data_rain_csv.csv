@@ -1,637 +1,637 @@
-﻿State,state_code,Month,Rain,value,car,economic,Airline,Water,NobodyNeedsYou,Air
-Alabama,AL,January,0.91,1,14,202118.2,2,44,46,44.44
-Alabama,AL,February,0.12,2,307,202918.2,26,35,46,35.35
-Alabama,AL,March,0.75,3,194,204228.6,13,23,46,23.23
-Alabama,AL,April,0.72,4,1378,204465.8,20,10,46,32
-Alabama,AL,May,0.24,5,165,204004.9,16,17,34,27.76
-Alabama,AL,June,0.89,6,113,186912.4,4,31,34,31.31
-Alabama,AL,July,0.97,7,40,204205.1,68,41,34,41.41
-Alabama,AL,August,0.89,8,13,203700.7,12,46,34,46.46
-Alabama,AL,September,0.18,9,1049,207001.8,22,42,48,42.42
-Alabama,AL,October,0.55,10,581,209857.1,23,31,48,31.31
-Alabama,AL,November,0.31,11,24,210029.1,12,25,48,25.25
-Alabama,AL,December,0.56,12,85,213029.2,59,41,48,41.41
-Alaska,AK,January,0.6,1,479,53136.3,16,48,72,29.1
-Alaska,AK,February,0.44,2,348,53072.5,29,47,72,28.6
-Alaska,AK,March,0.97,3,117,53940.9,2,36,72,29.01
-Alaska,AK,April,0.05,4,138,53585.5,4,22,72,28.8
-Alaska,AK,May,0.92,5,322,53030,40,17,58,29.7
-Alaska,AK,June,0.69,6,263,48540.1,1,33,58,28.6
-Alaska,AK,July,0.01,7,55,50181.2,19,43,58,29.3
-Alaska,AK,August,0.05,8,219,51069.4,151,46,58,29.7
-Alaska,AK,September,0.5,9,139,50690.3,12,40,71,28.6
-Alaska,AK,October,0.09,10,342,50707.9,68,25,71,28.98
-Alaska,AK,November,0.78,11,130,50935.9,7,6,71,29.16
-Alaska,AK,December,0.48,12,299,51143.5,10,14,71,29.34
-Arizona,AZ,January,0.56,1,395,320391.8,324,30,41,18.45
-Arizona,AZ,February,0.29,2,76,323022,45,42,41,18.45
-Arizona,AZ,March,0.12,3,84,327457.6,254,44,41,18.45
-Arizona,AZ,April,0.31,4,88,330709.7,1,37,41,18.45
-Arizona,AZ,May,0.36,5,39,328587.6,2,24,39,17.55
-Arizona,AZ,June,0.59,6,201,310250,72,12,39,17.55
-Arizona,AZ,July,0.31,7,103,331692.4,101,19,39,17.55
-Arizona,AZ,August,0.47,8,332,338182.1,27,30,39,17.55
-Arizona,AZ,September,0.12,9,648,339659.7,96,36,35,15.75
-Arizona,AZ,October,0.06,10,22,344936.2,45,35,35,15.75
-Arizona,AZ,November,0.21,11,466,348706,60,27,35,15.75
-Arizona,AZ,December,0.17,12,198,357322,104,14,35,15.75
-Arkansas,AR,January,0.08,1,167,116488.4,1,17,68,30.6
-Arkansas,AR,February,0.93,2,429,116386.4,32,31,68,30.6
-Arkansas,AR,March,0.17,3,29,117477.3,11,39,68,30.6
-Arkansas,AR,April,0.72,4,406,118152.6,183,40,68,30.6
-Arkansas,AR,May,0.72,5,33,118972.3,38,35,80,36
-Arkansas,AR,June,0.07,6,469,119377.4,3,24,80,36
-Arkansas,AR,July,0.6,7,1209,119377.4,30,10,80,36
-Arkansas,AR,August,0.2,8,99,111033,103,8,80,36
-Arkansas,AR,September,0.98,9,27,121860.2,88,20,80,36
-Arkansas,AR,October,0.87,10,324,123015.2,42,28,80,36
-Arkansas,AR,November,0.61,11,202,123676.9,7,29,80,36
-Arkansas,AR,December,0.38,12,77,124837,54,23,80,36
-California,CA,January,0.73,1,221,2682675.6,115,16,104,46.8
-California,CA,February,0.99,2,27,2720749.7,61,10,104,46.8
-California,CA,March,0.62,3,25,2740837.8,38,23,104,46.8
-California,CA,April,0.22,4,194,2772640.2,56,35,104,46.8
-California,CA,May,0.14,5,233,2726966.1,54,41,105,47.25
-California,CA,June,0.84,6,674,2497144.4,33,42,105,47.25
-California,CA,July,0.4,7,187,2698461.3,75,37,105,47.25
-California,CA,August,0.22,8,54,2746311.9,265,27,105,47.25
-California,CA,September,0.98,9,33,2802569.5,66,17,86,38.7
-California,CA,October,0.28,10,4,2858504.7,117,8,86,38.7
-California,CA,November,0.12,11,691,2894880.5,58,4,86,38.7
-California,CA,December,0.77,12,483,2942968.5,41,3,86,38.7
-Colorado,CO,January,0.96,1,17,350431,166,5,71,31.95
-Colorado,CO,February,0.94,2,71,355838.1,11,9,71,31.95
-Colorado,CO,March,0.14,3,297,363469.4,44,11,71,31.95
-Colorado,CO,April,0.14,4,236,364015.4,4,13,71,31.95
-Colorado,CO,May,0.65,5,85,364343.9,55,11,101,45.45
-Colorado,CO,June,0.82,6,139,333946.6,49,4,101,45.45
-Colorado,CO,July,0.84,7,218,357012.4,6,13,101,45.45
-Colorado,CO,August,0.11,8,267,358077.8,134,26,101,45.45
-Colorado,CO,September,0.83,9,61,366673.8,36,35,101,45.45
-Colorado,CO,October,0.25,10,102,371776.5,15,40,101,45.45
-Colorado,CO,November,0.86,11,73,374332.1,10,39,101,45.45
-Colorado,CO,December,0.84,12,320,382270.9,6,30,101,45.45
-Connecticut,CT,January,0.52,1,115,251484.3,39,21,86,38.7
-Connecticut,CT,February,0.01,2,231,251650.1,19,9,86,38.7
-Connecticut,CT,March,0.7,3,283,251556.4,41,8,86,38.7
-Connecticut,CT,April,0.67,4,77,251582.1,95,20,86,38.7
-Connecticut,CT,May,0.88,5,79,243008.4,128,30,63,28.35
-Connecticut,CT,June,0.15,6,68,220597.9,21,39,63,28.35
-Connecticut,CT,July,0.69,7,20,237183.6,36,44,63,28.35
-Connecticut,CT,August,0.87,8,95,240149.7,54,43,63,28.35
-Connecticut,CT,September,0.96,9,137,240879.9,65,36,58,26.1
-Connecticut,CT,October,0.72,10,168,246676.8,17,25,58,26.1
-Connecticut,CT,November,0.89,11,387,248028.1,9,12,58,26.1
-Connecticut,CT,December,0.09,12,40,250638.6,21,1,58,26.1
-Delaware,DE,January,0.09,1,326,63295.1,20,4,62,27.9
-Delaware,DE,February,0.79,2,254,63873.7,0,8,62,27.9
-Delaware,DE,March,0.25,3,128,64475.1,6,9,62,27.9
-Delaware,DE,April,0,4,236,64930.1,1,6,62,27.9
-Delaware,DE,May,0.85,5,5,63390.8,25,4,64,28.8
-Delaware,DE,June,0.05,6,281,59399.1,25,2,64,28.8
-Delaware,DE,July,0.76,7,58,63312.7,192,1,64,28.8
-Delaware,DE,August,0.65,8,343,63024.4,6,3,64,28.8
-Delaware,DE,September,0.26,9,1232,63357.3,14,9,76,34.2
-Delaware,DE,October,0.57,10,76,64176.8,82,19,76,34.2
-Delaware,DE,November,0.88,11,10,64460.9,2,28,76,34.2
-Delaware,DE,December,0.59,12,253,65623.9,7,34,76,34.2
-District of Columbia,DC,January,0.78,1,131,123219.3,10,39,56,25.2
-District of Columbia,DC,February,0.7,2,100,124251.9,14,37,56,25.2
-District of Columbia,DC,March,0.02,3,178,125113.1,45,28,56,25.2
-District of Columbia,DC,April,0.2,4,61,125804.6,17,17,56,25.2
-District of Columbia,DC,May,0.53,5,2,125559.2,116,4,40,18
-District of Columbia,DC,June,0.71,6,15,118134.2,35,7,40,18
-District of Columbia,DC,July,0.89,7,18,122164.7,193,15,40,18
-District of Columbia,DC,August,0.85,8,25,124082.9,20,19,40,18
-District of Columbia,DC,September,0.51,9,17,124274.3,51,22,48,21.6
-District of Columbia,DC,October,0.98,10,3,126538.3,80,22,48,21.6
-District of Columbia,DC,November,0.68,11,0,128234.6,158,17,48,21.6
-District of Columbia,DC,December,0.46,12,0,128884.7,92,12,48,21.6
-Florida,FL,January,0.79,1,30,957610.1,51,9,51,22.95
-Florida,FL,February,0.01,2,29,960872.8,45,8,51,22.95
-Florida,FL,March,0.08,3,1,968246.5,41,11,51,22.95
-Florida,FL,April,0.66,4,6,975960.5,29,17,51,22.95
-Florida,FL,May,0.66,5,20,969585.9,69,25,64,28.8
-Florida,FL,June,0.87,6,19,891076.7,37,32,64,28.8
-Florida,FL,July,0.73,7,13,966543.8,35,36,64,28.8
-Florida,FL,August,0.07,8,12,958451.2,165,35,64,28.8
-Florida,FL,September,0.62,9,17,991701,11,28,54,24.3
-Florida,FL,October,0.75,10,10,1023722.9,28,16,54,24.3
-Florida,FL,November,1,11,3,1038486.4,74,2,54,24.3
-Florida,FL,December,0.96,12,5,1064392.2,76,2,54,24.3
-Georgia,GA,January,0.71,1,2,549780.5,43,13,50,48.1
-Georgia,GA,February,0.99,2,7,556686.4,21,18,50,48.6
-Georgia,GA,March,0.85,3,8,560984.6,23,18,50,48.3
-Georgia,GA,April,0.77,4,8,562006.2,62,11,50,48.7
-Georgia,GA,May,0.75,5,17,551028,5,2,52,47.9
-Georgia,GA,June,0.16,6,6,506655.7,45,3,52,47.8
-Georgia,GA,July,0.54,7,8,544494.2,18,16,52,46.9
-Georgia,GA,August,0.51,8,7,548285.2,18,27,52,47.8
-Georgia,GA,September,0.19,9,1,561223.1,13,35,62,49.4
-Georgia,GA,October,0.95,10,6,575976.2,55,37,62,47.7
-Georgia,GA,November,0.74,11,10,577786.3,10,32,62,48.4
-Georgia,GA,December,0.15,12,16,586183,41,20,62,48.2
-Hawaii,HI,January,0.91,1,18,78923.8,25,5,69,21.2
-Hawaii,HI,February,0.45,2,1,78928.8,19,4,69,21.1
-Hawaii,HI,March,0.93,3,15,79498.5,12,14,69,20.7
-Hawaii,HI,April,0.99,4,8,79502.4,16,19,69,21.6
-Hawaii,HI,May,0.35,5,6,76310.1,9,15,91,21.9
-Hawaii,HI,June,0.04,6,19,65797.9,18,4,91,21.8
-Hawaii,HI,July,0.81,7,1,68278.7,23,9,91,20.5
-Hawaii,HI,August,0.65,8,16,70050.9,27,23,91,21.3
-Hawaii,HI,September,0.76,9,2,71310.6,31,33,65,21.1
-Hawaii,HI,October,0.56,10,28,74502,9,39,65,21
-Hawaii,HI,November,0.8,11,80,76530.9,23,37,65,20.9
-Hawaii,HI,December,0.88,12,3,75845.4,23,27,65,21.4
-Idaho,ID,January,0.61,1,1,73083.7,42,9,62,27.9
-Idaho,ID,February,0.9,2,24,73827.2,14,12,62,27.9
-Idaho,ID,March,0.17,3,1,74667.5,13,18,62,27.9
-Idaho,ID,April,0.06,4,8,75072,33,16,62,27.9
-Idaho,ID,May,0.08,5,4,75726.1,25,10,72,32.4
-Idaho,ID,June,0.83,6,7,70182.8,27,1,72,32.4
-Idaho,ID,July,0.63,7,4,76930.1,14,13,72,32.4
-Idaho,ID,August,0.92,8,161,77743,34,25,72,32.4
-Idaho,ID,September,0.18,9,80,79045.1,70,33,88,39.6
-Idaho,ID,October,0.11,10,539,78896.8,13,35,88,39.6
-Idaho,ID,November,0.95,11,140,79557.9,59,28,88,39.6
-Idaho,ID,December,0.49,12,58,82875.4,48,15,88,39.6
-Illinois,IL,January,0.93,1,15,775007.5,39,11,52,23.4
-Illinois,IL,February,0.54,2,7,774750.5,88,21,52,23.4
-Illinois,IL,March,0.95,3,600,779650.4,7,26,52,23.4
-Illinois,IL,April,0.63,4,192,774584.1,74,22,52,23.4
-Illinois,IL,May,0.23,5,18,757923.8,24,14,45,20.25
-Illinois,IL,June,0.43,6,27,691519.8,80,4,45,20.25
-Illinois,IL,July,0.64,7,153,741584.2,27,9,45,20.25
-Illinois,IL,August,0.94,8,151,746512.4,7,21,45,20.25
-Illinois,IL,September,0.88,9,64,767548.8,26,32,51,22.95
-Illinois,IL,October,0.82,10,65,777898.6,51,38,51,22.95
-Illinois,IL,November,0.79,11,92,780279.4,1,37,51,22.95
-Illinois,IL,December,0.91,12,78,794516.3,22,28,51,22.95
-Indiana,IN,January,0.3,1,29,335743.9,22,11,45,47.4
-Indiana,IN,February,0.11,2,85,337162.6,22,11,45,47.2
-Indiana,IN,March,0.91,3,52,339127,63,29,45,47.6
-Indiana,IN,April,0.02,4,170,339575.3,15,42,45,47.1
-Indiana,IN,May,0.92,5,66,336332.9,19,47,41,46.7
-Indiana,IN,June,0.58,6,62,302558.9,3,41,41,47.8
-Indiana,IN,July,0.33,7,123,333913,16,30,41,46.5
-Indiana,IN,August,0.64,8,29,336306.7,15,19,41,47.5
-Indiana,IN,September,0.87,9,34,341620.8,3,7,48,48.2
-Indiana,IN,October,0.78,10,58,346166.2,61,0,48,47.7
-Indiana,IN,November,0.03,11,25,345596.3,58,2,48,47.1
-Indiana,IN,December,0.1,12,78,351580.2,9,14,48,47.4
-Iowa,IA,January,0.68,1,46,170447.3,15,30,67,30.15
-Iowa,IA,February,0.95,2,200,171741.9,0,44,67,30.15
-Iowa,IA,March,0.97,3,192,175301.6,25,54,67,30.15
-Iowa,IA,April,0.13,4,17,177397.1,80,55,67,30.15
-Iowa,IA,May,0.98,5,211,173979.9,19,49,72,32.4
-Iowa,IA,June,0.85,6,63,159659.9,29,35,72,32.4
-Iowa,IA,July,0.86,7,68,172700.1,9,15,72,32.4
-Iowa,IA,August,0.7,8,219,177489.6,40,11,72,32.4
-Iowa,IA,September,0.24,9,13,184430.3,11,28,48,21.6
-Iowa,IA,October,0.62,10,137,182618.1,47,41,48,21.6
-Iowa,IA,November,0.16,11,27,175641.3,36,48,48,21.6
-Iowa,IA,December,0.93,12,151,176322.1,36,47,48,21.6
-Kansas,KS,January,0.77,1,483,158640.1,25,37,56,25.2
-Kansas,KS,February,0.03,2,44,160104.8,20,23,56,25.2
-Kansas,KS,March,0.53,3,10,160401.7,10,11,56,25.2
-Kansas,KS,April,0.04,4,101,160158.1,24,4,56,25.2
-Kansas,KS,May,0.94,5,91,163507.5,101,4,71,31.95
-Kansas,KS,June,0.02,6,38,149456.2,28,13,71,31.95
-Kansas,KS,July,0.01,7,116,160314,25,27,71,31.95
-Kansas,KS,August,0.79,8,19,160115.5,11,42,71,31.95
-Kansas,KS,September,0.99,9,13,159725.7,45,56,61,27.45
-Kansas,KS,October,0.95,10,222,162553.7,112,63,61,27.45
-Kansas,KS,November,0.92,11,81,162695.6,21,60,61,27.45
-Kansas,KS,December,0.81,12,986,164188.6,47,48,61,27.45
-Kentucky,KY,January,0.9,1,87,190556,46,28,37,23.1
-Kentucky,KY,February,0.27,2,56,192370.7,9,6,37,23.4
-Kentucky,KY,March,0.04,3,25,193633.8,3,3,37,23.2
-Kentucky,KY,April,0.1,4,10,195327.2,21,20,37,23.6
-Kentucky,KY,May,0.73,5,696,193361,11,30,48,30.24
-Kentucky,KY,June,0.28,6,279,174321.8,8,36,48,30.26
-Kentucky,KY,July,0.38,7,21,192693.9,6,36,48,30.22
-Kentucky,KY,August,0.03,8,14,193208.6,15,29,48,31.04
-Kentucky,KY,September,0.8,9,176,195481.6,116,20,48,29.23
-Kentucky,KY,October,0.58,10,93,197455.1,34,12,48,30.52
-Kentucky,KY,November,0.86,11,27,197955.6,31,6,48,30.61
-Kentucky,KY,December,0.69,12,46,200380.8,78,7,48,30.37
-Louisiana,LA,January,0.81,1,91,237800.9,63,14,46,20.7
-Louisiana,LA,February,0.82,2,144,236743.1,19,27,46,20.7
-Louisiana,LA,March,0.96,3,9,237569.8,3,40,46,20.7
-Louisiana,LA,April,0.83,4,130,236064.5,66,52,46,20.7
-Louisiana,LA,May,0.74,5,52,228455.8,11,59,50,22.5
-Louisiana,LA,June,0.9,6,171,207356.9,10,58,50,22.5
-Louisiana,LA,July,0.86,7,45,220884.5,61,49,50,22.5
-Louisiana,LA,August,0.92,8,106,216989.5,5,34,50,22.5
-Louisiana,LA,September,0.88,9,128,217163.4,34,15,62,27.9
-Louisiana,LA,October,0.78,10,17,222838.7,71,23,62,27.9
-Louisiana,LA,November,0.63,11,18,222078.6,13,34,62,27.9
-Louisiana,LA,December,0.57,12,79,222530.2,23,42,62,27.9
-Maine,ME,January,0.8,1,16,58882.1,56,43,66,29.7
-Maine,ME,February,0.59,2,173,59025.4,27,38,66,29.7
-Maine,ME,March,0.99,3,79,59791.4,7,31,66,29.7
-Maine,ME,April,0.96,4,231,60514.5,9,24,66,29.7
-Maine,ME,May,0.98,5,228,60361.4,9,20,44,19.8
-Maine,ME,June,0.97,6,8,56312.8,10,20,44,19.8
-Maine,ME,July,1,7,159,60724.8,102,27,44,19.8
-Maine,ME,August,0.47,8,85,62126.8,22,35,44,19.8
-Maine,ME,September,0.66,9,71,62452.2,175,45,58,26.1
-Maine,ME,October,0.68,10,143,63374.6,37,53,58,26.1
-Maine,ME,November,0.94,11,17,63875.6,15,54,58,26.1
-Maine,ME,December,0.07,12,187,64675.9,4,50,58,26.1
-Maryland,MD,January,0.14,1,14,364881,17,38,52,23.4
-Maryland,MD,February,0.99,2,172,368231.4,6,24,52,23.4
-Maryland,MD,March,0.24,3,687,369344.7,37,7,52,23.4
-Maryland,MD,April,0.95,4,33,369768.6,2,13,52,23.4
-Maryland,MD,May,0.02,5,8,360145.3,39,31,64,28.8
-Maryland,MD,June,0.11,6,111,334847,18,48,64,28.8
-Maryland,MD,July,0.18,7,97,356775.6,27,42,64,28.8
-Maryland,MD,August,0.91,8,18,357768,4,30,64,28.8
-Maryland,MD,September,0.95,9,50,368282.1,13,25,58,26.1
-Maryland,MD,October,0.98,10,6,365495.6,25,23,58,26.1
-Maryland,MD,November,0.92,11,2,368244.1,57,27,58,26.1
-Maryland,MD,December,0.94,12,33,372262.5,36,35,58,26.1
-Massachusetts,MA,January,0.97,1,6,510381.5,31,45,46,20.7
-Massachusetts,MA,February,0.95,2,129,512748.8,71,51,46,20.7
-Massachusetts,MA,March,0.06,3,15,515787.7,34,51,46,20.7
-Massachusetts,MA,April,0.96,4,5,517765.4,12,47,46,20.7
-Massachusetts,MA,May,0.81,5,3,516216.1,11,41,31,13.95
-Massachusetts,MA,June,0.02,6,1,469194.2,89,22,31,13.95
-Massachusetts,MA,July,0.15,7,67,500082.5,60,2,31,13.95
-Massachusetts,MA,August,0.02,8,32,514511,39,11,31,13.95
-Massachusetts,MA,September,0.01,9,4,520143.7,55,26,41,18.45
-Massachusetts,MA,October,0.04,10,3,530568.1,20,38,41,18.45
-Massachusetts,MA,November,0.85,11,30,537050.8,61,48,41,18.45
-Massachusetts,MA,December,0.05,12,20,544645.6,29,53,41,18.45
-Michigan,MI,January,0.31,1,10,464485.1,13,54,39,17.55
-Michigan,MI,February,0,2,4,465850.2,19,47,39,17.55
-Michigan,MI,March,0.85,3,5,469360.9,48,37,39,17.55
-Michigan,MI,April,0.24,4,34,468731.7,33,28,39,17.55
-Michigan,MI,May,0.04,5,2,461865.4,34,21,51,22.95
-Michigan,MI,June,0.13,6,14,406391.9,13,16,51,22.95
-Michigan,MI,July,0.98,7,10,461198.3,29,14,51,22.95
-Michigan,MI,August,0.02,8,38,464365.7,19,15,51,22.95
-Michigan,MI,September,0.13,9,10,469497.8,12,18,51,22.95
-Michigan,MI,October,0.92,10,9,485125,27,22,51,22.95
-Michigan,MI,November,0.96,11,8,484788.4,15,26,51,22.95
-Michigan,MI,December,0.1,12,0,487700.9,14,25,51,22.95
-Minnesota,MN,January,0.86,1,1,337487.5,26,18,57,25.65
-Minnesota,MN,February,0.9,2,11,339308.7,61,8,57,25.65
-Minnesota,MN,March,0.08,3,2,342364.7,31,6,57,25.65
-Minnesota,MN,April,0,4,18,343067.7,25,17,57,25.65
-Minnesota,MN,May,0.03,5,8,337282.4,95,22,71,31.95
-Minnesota,MN,June,0.99,6,47,309700.2,45,27,71,31.95
-Minnesota,MN,July,0.93,7,26,331040.1,15,30,71,31.95
-Minnesota,MN,August,0.07,8,1,335935.5,43,25,71,31.95
-Minnesota,MN,September,0.09,9,18,339113.7,27,18,68,30.6
-Minnesota,MN,October,0.09,10,12,348488.9,17,8,68,30.6
-Minnesota,MN,November,0.78,11,14,346693.2,8,9,68,30.6
-Minnesota,MN,December,0.12,12,20,350521.5,68,14,68,30.6
-Mississippi,MS,January,0.74,1,64,100004.5,52,17,65,29.25
-Mississippi,MS,February,0.94,2,1054,100214.1,81,16,65,29.25
-Mississippi,MS,March,0.05,3,638,101231.3,25,8,65,29.25
-Mississippi,MS,April,0.84,4,3847,102481.5,93,5,65,29.25
-Mississippi,MS,May,0.01,5,622,102637.9,98,17,65,29.25
-Mississippi,MS,June,0.86,6,295,102849.8,81,28,65,29.25
-Mississippi,MS,July,0.98,7,116,100612.3,73,32,65,29.25
-Mississippi,MS,August,0.77,8,36,101007.9,25,32,65,29.25
-Mississippi,MS,September,0.18,9,3331,103755.6,28,28,62,27.9
-Mississippi,MS,October,0.05,10,1664,104810.9,93,19,62,27.9
-Mississippi,MS,November,0.97,11,85,104449.7,20,9,62,27.9
-Mississippi,MS,December,0.04,12,214,104397.6,15,10,62,27.9
-Missouri,MO,January,0.97,1,2,288322.9,19,23,61,27.45
-Missouri,MO,February,0.07,2,14,289665.3,11,36,61,27.45
-Missouri,MO,March,0.88,3,0,292273.4,48,46,61,27.45
-Missouri,MO,April,0.94,4,13,292216.5,10,51,61,27.45
-Missouri,MO,May,0.01,5,79,288830.3,23,49,55,24.75
-Missouri,MO,June,0.1,6,8,266048.3,14,41,55,24.75
-Missouri,MO,July,0.14,7,1,286515.9,26,29,55,24.75
-Missouri,MO,August,0.16,8,7,289622,10,15,55,24.75
-Missouri,MO,September,0.96,9,11,291959.7,9,4,55,24.75
-Missouri,MO,October,0.08,10,2,296052.5,81,4,55,24.75
-Missouri,MO,November,0.96,11,12,296322.7,35,12,55,24.75
-Missouri,MO,December,0.03,12,1,298414.3,58,16,55,24.75
-Montana,MT,January,0.9,1,1194,46678,8,16,64,28.8
-Montana,MT,February,0.01,2,897,46539.6,92,12,64,28.8
-Montana,MT,March,0.91,3,337,47171.8,16,8,64,28.8
-Montana,MT,April,0.81,4,426,47155.5,39,8,64,28.8
-Montana,MT,May,0.97,5,780,46849,91,14,50,22.5
-Montana,MT,June,0.07,6,828,44159.2,17,22,50,22.5
-Montana,MT,July,0.88,7,164,47814.1,14,30,50,22.5
-Montana,MT,August,0.01,8,567,48179.4,8,38,50,22.5
-Montana,MT,September,0.79,9,343,48378.2,10,42,47,21.15
-Montana,MT,October,0.22,10,1084,48684.8,26,42,47,21.15
-Montana,MT,November,1,11,394,48869.4,4,36,47,21.15
-Montana,MT,December,0.03,12,752,49972.5,2,24,47,21.15
-Nebraska,NE,January,0.87,1,987,116811.1,2,10,56,25.2
-Nebraska,NE,February,0.02,2,213,117510.4,58,10,56,25.2
-Nebraska,NE,March,0.2,3,233,119333.5,11,21,56,25.2
-Nebraska,NE,April,0.76,4,317,120759.9,7,27,56,25.2
-Nebraska,NE,May,0.11,5,104,119303.3,58,28,63,28.35
-Nebraska,NE,June,0.19,6,584,111597.6,16,22,63,28.35
-Nebraska,NE,July,0.95,7,398,119738.9,12,13,63,28.35
-Nebraska,NE,August,0.75,8,1046,121926.3,4,6,63,28.35
-Nebraska,NE,September,0.88,9,1538,120744.5,108,2,72,32.4
-Nebraska,NE,October,0.01,10,100,122711.6,44,3,72,32.4
-Nebraska,NE,November,0.03,11,1230,122550.7,2,8,72,32.4
-Nebraska,NE,December,0.83,12,652,122537.7,17,17,72,32.4
-Nevada,NV,January,0.24,1,508,154866.9,35,25,72,32.4
-Nevada,NV,February,0.16,2,1129,155909.4,12,32,72,32.4
-Nevada,NV,March,0.07,3,67,157766.3,23,36,72,32.4
-Nevada,NV,April,0.01,4,1064,159293.9,7,31,72,32.4
-Nevada,NV,May,0.26,5,141,157147.1,29,20,65,29.25
-Nevada,NV,June,0.17,6,1217,132382.1,10,6,65,29.25
-Nevada,NV,July,0.3,7,3874,147506.8,12,13,65,29.25
-Nevada,NV,August,0.31,8,276,148934.1,15,27,65,29.25
-Nevada,NV,September,0.14,9,62,152028.4,127,32,48,21.6
-Nevada,NV,October,0.06,10,850,158620.1,40,27,48,21.6
-Nevada,NV,November,0.06,11,560,162356.1,47,15,48,21.6
-Nevada,NV,December,0.14,12,267,165264.7,16,1,48,21.6
-New Hampshire,NH,January,0.35,1,614,77160.5,28,-15,42,18.9
-New Hampshire,NH,February,0.88,2,127,76712.6,17,-13,42,18.9
-New Hampshire,NH,March,0.86,3,489,76756,29,-1,42,18.9
-New Hampshire,NH,April,0.91,4,33,76647.1,15,13,42,18.9
-New Hampshire,NH,May,0.89,5,578,77494.8,33,25,67,30.15
-New Hampshire,NH,June,0.09,6,366,70274.6,39,34,67,30.15
-New Hampshire,NH,July,0.15,7,2260,77056.3,12,39,67,30.15
-New Hampshire,NH,August,0.82,8,355,78884.8,35,36,67,30.15
-New Hampshire,NH,September,0.26,9,169,79001.1,124,23,55,24.75
-New Hampshire,NH,October,0.25,10,54,83106.2,11,5,55,24.75
-New Hampshire,NH,November,1,11,18,83544.8,70,2,55,24.75
-New Hampshire,NH,December,0.11,12,1714,86292.9,17,20,55,24.75
-New Jersey,NJ,January,0.04,1,854,555174.5,31,30,50,22.5
-New Jersey,NJ,February,0.22,2,52,558323.5,62,34,50,22.5
-New Jersey,NJ,March,1,3,111,562684.5,100,28,50,22.5
-New Jersey,NJ,April,0.92,4,631,562412.5,34,15,50,22.5
-New Jersey,NJ,May,0.12,5,455,556862.9,68,2,47,21.15
-New Jersey,NJ,June,0.97,6,166,497580.7,10,9,47,21.15
-New Jersey,NJ,July,0.02,7,215,541270,11,26,47,21.15
-New Jersey,NJ,August,0.11,8,436,545581.5,35,41,47,21.15
-New Jersey,NJ,September,0.93,9,480,559072.4,24,52,61,27.45
-New Jersey,NJ,October,0.17,10,109,563421.3,44,55,61,27.45
-New Jersey,NJ,November,0.68,11,310,567906.5,51,48,61,27.45
-New Jersey,NJ,December,0.19,12,193,577172.6,135,6,61,27.45
-New Mexico,NM,January,0.05,1,558,92668,74,27,64,28.8
-New Mexico,NM,February,0.12,2,225,94177.9,33,44,64,28.8
-New Mexico,NM,March,0.05,3,455,96095,13,53,64,28.8
-New Mexico,NM,April,0.28,4,560,96648.8,75,49,64,28.8
-New Mexico,NM,May,0.06,5,149,96699.5,21,36,73,32.85
-New Mexico,NM,June,0.3,6,116,87891.1,78,20,73,32.85
-New Mexico,NM,July,0.33,7,181,92675.2,36,5,73,32.85
-New Mexico,NM,August,0.78,8,61,92719.3,69,13,73,32.85
-New Mexico,NM,September,0.98,9,341,92692.4,21,30,66,29.7
-New Mexico,NM,October,0.43,10,237,92652.9,10,45,66,29.7
-New Mexico,NM,November,0,11,588,93601.6,34,57,66,29.7
-New Mexico,NM,December,0.27,12,818,95553.3,24,59,66,29.7
-New York,NY,January,0.82,1,61,1485313.9,69,51,49,22.05
-New York,NY,February,0.03,2,655,1504078.5,39,35,49,22.05
-New York,NY,March,0.15,3,342,1506282.5,35,15,47,21.15
-New York,NY,April,0.94,4,292,1507658.7,31,11,47,21.15
-New York,NY,May,0.08,5,623,1489185.1,49,33,67,30.15
-New York,NY,June,0.73,6,47,1347704.9,37,51,67,30.15
-New York,NY,July,0.17,7,592,1442509.1,42,63,67,30.15
-New York,NY,August,0.92,8,77,1450628.9,108,65,67,30.15
-New York,NY,September,0.03,9,622,1471477.6,58,59,77,34.65
-New York,NY,October,0.23,10,2017,1504178.3,41,46,77,34.65
-New York,NY,November,0.14,11,148,1525423.5,27,30,77,34.65
-New York,NY,December,0.95,12,41,1558037.6,31,17,77,34.65
-North Carolina,NC,January,0.9,1,472,506751.7,45,11,69,31.05
-North Carolina,NC,February,0.97,2,310,510250.2,18,10,69,31.05
-North Carolina,NC,March,0.83,3,146,515076.9,20,10,69,31.05
-North Carolina,NC,April,0.99,4,341,519260.5,13,18,69,31.05
-North Carolina,NC,May,0.04,5,76,517199.1,38,34,42,18.9
-North Carolina,NC,June,0.96,6,445,474916.8,80,45,42,18.9
-North Carolina,NC,July,0.82,7,31,514459.9,27,46,42,18.9
-North Carolina,NC,August,0.09,8,476,520056.7,13,35,42,18.9
-North Carolina,NC,September,0.98,9,272,531416.3,30,16,56,25.2
-North Carolina,NC,October,0.89,10,1587,538422.9,164,15,56,25.2
-North Carolina,NC,November,0.1,11,267,542333.1,29,41,56,25.2
-North Carolina,NC,December,0.85,12,126,555562.7,79,55,56,25.2
-North Dakota,ND,January,0.03,1,62,56160.9,40,63,54,36.72
-North Dakota,ND,February,0.98,2,18,56452.6,35,55,54,36.72
-North Dakota,ND,March,0.1,3,1617,56594.7,46,35,54,36.72
-North Dakota,ND,April,0.09,4,810,56333.2,55,13,54,36.72
-North Dakota,ND,May,0.07,5,33,56253.2,52,5,40,26.8
-North Dakota,ND,June,0.2,6,103,51736.6,31,24,40,26.8
-North Dakota,ND,July,0.93,7,563,53492.7,3,39,40,26.8
-North Dakota,ND,August,0.71,8,442,53131.7,16,48,40,26.8
-North Dakota,ND,September,0.14,9,171,53625.5,56,45,15,28.5
-North Dakota,ND,October,0.93,10,211,53898.7,101,34,15,28.5
-North Dakota,ND,November,0.1,11,344,54135.8,36,17,15,28.5
-North Dakota,ND,December,0.97,12,348,53554.2,34,16,15,28.5
-Ohio,OH,January,0.27,1,55,606905.1,30,39,73,48.2
-Ohio,OH,February,0.92,2,257,611108.6,45,58,73,48.8
-Ohio,OH,March,0.06,3,150,616757.2,15,69,73,47.9
-Ohio,OH,April,0.12,4,526,618234.4,9,73,73,49.3
-Ohio,OH,May,0.89,5,169,608669.9,59,68,61,48.8
-Ohio,OH,June,0.11,6,297,552493.3,93,52,61,48.1
-Ohio,OH,July,0.16,7,427,603832.5,40,39,61,47.7
-Ohio,OH,August,0.83,8,64,611578.8,7,27,61,46.2
-Ohio,OH,September,0.13,9,117,617796,9,18,11,48.5
-Ohio,OH,October,0.01,10,136,627586.2,32,15,11,50.1
-Ohio,OH,November,0.01,11,43,629811.9,17,16,11,48.6
-Ohio,OH,December,0.19,12,243,641954.1,4,22,11,49.3
-Oklahoma,OK,January,0.84,1,161,199653.6,84,30,57,25.65
-Oklahoma,OK,February,0.98,2,458,199926.6,44,33,57,25.65
-Oklahoma,OK,March,0.96,3,720,202903.2,184,29,57,25.65
-Oklahoma,OK,April,0,4,39,202162.6,39,25,57,25.65
-Oklahoma,OK,May,0.9,5,575,199196.3,63,10,53,23.85
-Oklahoma,OK,June,0.9,6,310,183394.4,3,5,53,23.85
-Oklahoma,OK,July,0.79,7,216,195221.3,25,20,53,23.85
-Oklahoma,OK,August,0.91,8,506,192129.8,16,30,53,23.85
-Oklahoma,OK,September,0.04,9,20,194233.1,14,39,74,33.3
-Oklahoma,OK,October,0.02,10,472,194128.9,10,43,74,33.3
-Oklahoma,OK,November,0.96,11,64,191043.1,80,45,74,33.3
-Oklahoma,OK,December,0.86,12,595,193515,3,46,74,33.3
-Oregon,OR,January,0.8,1,1857,217500.9,4,38,72,34.2
-Oregon,OR,February,0.05,2,128,218191.9,14,27,72,34.1
-Oregon,OR,March,0.94,3,21,220157.4,9,15,72,34.4
-Oregon,OR,April,0.87,4,378,222501.8,8,3,72,34.1
-Oregon,OR,May,0.95,5,250,221376.7,16,2,73,33.7
-Oregon,OR,June,0.89,6,121,203537.3,83,9,73,33.9
-Oregon,OR,July,1,7,273,218088.4,20,7,73,33.4
-Oregon,OR,August,0.08,8,51,219972.1,29,4,73,33.6
-Oregon,OR,September,0.95,9,934,223980.4,3,13,65,33.4
-Oregon,OR,October,0.77,10,64,226780.1,13,23,65,34.5
-Oregon,OR,November,0.88,11,1054,227437.1,2,36,65,34.7
-Oregon,OR,December,0.92,12,638,233718.7,38,48,65,34.9
-Pennsylvania,PA,January,0.87,1,3847,709027.9,36,56,40,32
-Pennsylvania,PA,February,0.66,2,622,713563.3,12,61,40,32
-Pennsylvania,PA,March,0.08,3,295,718536.4,47,58,40,32
-Pennsylvania,PA,April,0.12,4,116,719115.1,44,46,40,32
-Pennsylvania,PA,May,0.99,5,36,708225.7,8,29,55,31.35
-Pennsylvania,PA,June,0.99,6,3331,633368,36,14,55,31.35
-Pennsylvania,PA,July,0.93,7,1664,687974.9,24,],55,31.35
-Pennsylvania,PA,August,0.01,8,85,694260.9,4,3,55,31.35
-Pennsylvania,PA,September,0.04,9,214,700244.2,67,8,64,36.48
-Pennsylvania,PA,October,0.02,10,1194,708188.4,4,9,64,36.48
-Pennsylvania,PA,November,0.99,11,897,710466.4,47,11,64,36.48
-Pennsylvania,PA,December,0.21,12,337,724993.3,40,10,64,36.48
-Puerto Rico,PR,January,0.07,1,426,53455.3,24,6,102,45.9
-Puerto Rico,PR,February,0.93,2,780,53389.5,1,3,102,45.9
-Puerto Rico,PR,March,0.06,3,828,53279.4,20,7,102,45.9
-Puerto Rico,PR,April,0.7,4,164,53521.5,3,12,102,45.9
-Puerto Rico,PR,May,0.95,5,567,52990.8,5,18,41,18.45
-Puerto Rico,PR,June,0.8,6,343,47834.2,59,27,41,18.45
-Puerto Rico,PR,July,0.99,7,1084,52235.6,3,34,41,18.45
-Puerto Rico,PR,August,0.06,8,394,53003.9,59,38,41,18.45
-Puerto Rico,PR,September,0.99,9,752,52818.7,10,43,104,46.8
-Puerto Rico,PR,October,0.57,10,987,54858.9,13,39,104,46.8
-Puerto Rico,PR,November,0.95,11,213,54877.3,18,30,104,46.8
-Puerto Rico,PR,December,0.04,12,233,55869.2,49,18,104,46.8
-Rhode Island,RI,January,0.83,1,317,211107,44,6,79,35.55
-Rhode Island,RI,February,0.03,2,104,211455.5,9,3,79,35.55
-Rhode Island,RI,March,0.08,3,584,214257.7,25,8,79,35.55
-Rhode Island,RI,April,0.94,4,398,216130.9,2,15,79,35.55
-Rhode Island,RI,May,0.99,5,1046,210301.6,45,21,83,37.35
-Rhode Island,RI,June,0.1,6,1538,215335.2,24,27,83,37.35
-Rhode Island,RI,July,0.06,7,100,213350.3,2,28,83,37.35
-Rhode Island,RI,August,0.17,8,1230,213949.1,5,25,83,37.35
-Rhode Island,RI,September,0.95,9,652,216766.4,43,25,64,28.8
-Rhode Island,RI,October,0.02,10,508,221140.1,9,27,64,28.8
-Rhode Island,RI,November,0.22,11,1129,219640.7,10,32,64,28.8
-Rhode Island,RI,December,0.12,12,67,224632.6,1,39,64,28.8
-South Carolina,SC,January,0.99,1,1064,46365.7,9,48,60,27
-South Carolina,SC,February,0.02,2,141,46273,81,53,60,27
-South Carolina,SC,March,0.96,3,1217,46850.7,9,58,60,27
-South Carolina,SC,April,0.73,4,3874,47112.8,11,62,60,27
-South Carolina,SC,May,0.01,5,276,47332.1,4,65,51,22.95
-South Carolina,SC,June,0.02,6,62,45063.5,4,67,51,22.95
-South Carolina,SC,July,0.14,7,850,48277.3,9,64,51,22.95
-South Carolina,SC,August,0.03,8,560,48936.6,5,60,51,22.95
-South Carolina,SC,September,0.87,9,267,49114.3,109,50,52,23.4
-South Carolina,SC,October,0.13,10,614,49673.7,35,38,52,23.4
-South Carolina,SC,November,0.17,11,127,49523.8,95,30,52,23.4
-South Carolina,SC,December,0.1,12,192,49920.1,29,26,52,23.4
-South Dakota,SD,January,0.05,1,18,328581.6,1,25,51,22.95
-South Dakota,SD,February,0.91,2,27,329960.1,6,31,51,22.95
-South Dakota,SD,March,0.81,3,153,333396.5,14,40,51,22.95
-South Dakota,SD,April,0.84,4,151,332768.1,7,50,51,22.95
-South Dakota,SD,May,0.89,5,64,334634.1,11,55,64,28.8
-South Dakota,SD,June,0.99,6,65,295265,6,59,64,28.8
-South Dakota,SD,July,0.96,7,92,329028.3,12,55,64,28.8
-South Dakota,SD,August,0.02,8,78,334888.6,5,48,64,28.8
-South Dakota,SD,September,0.07,9,29,346070.8,1,37,68,30.6
-South Dakota,SD,October,0.63,10,85,349444,50,28,68,30.6
-South Dakota,SD,November,0.03,11,52,352803.5,23,23,68,30.6
-South Dakota,SD,December,0.97,12,170,361526.3,27,23,68,30.6
-Tennessee,TN,January,0.06,1,66,1753036.9,13,28,57,47.2
-Tennessee,TN,February,0.79,2,62,1762172.9,9,39,57,47
-Tennessee,TN,March,0.78,3,123,1794129.8,7,55,57,47.5
-Tennessee,TN,April,0.03,4,29,1809786,47,67,57,46.9
-Tennessee,TN,May,0.21,5,34,1757627.8,3,71,47,46.8
-Tennessee,TN,June,0.07,6,58,1790727.8,50,71,47,48.1
-Tennessee,TN,July,0.99,7,25,1766666.4,3,63,47,46.2
-Tennessee,TN,August,0.93,8,78,1765727.5,86,51,47,47.1
-Tennessee,TN,September,0.23,9,46,1794614.3,7,39,34,48
-Tennessee,TN,October,0.02,10,176,1809123.4,12,28,34,47.4
-Tennessee,TN,November,0.8,11,93,1815623.2,4,20,34,46.8
-Tennessee,TN,December,1,12,27,1840893.4,48,14,34,47.3
-Texas,TX,January,0.24,1,46,170693.7,14,12,35,15.75
-Texas,TX,February,0,2,91,169826.4,101,15,35,15.75
-Texas,TX,March,0.05,3,144,173266.6,16,22,35,15.75
-Texas,TX,April,0.92,4,9,174366.9,51,33,35,15.75
-Texas,TX,May,0.11,5,130,173889.8,33,41,31,13.95
-Texas,TX,June,0.08,6,52,167403.9,36,46,31,13.95
-Texas,TX,July,0.99,7,171,177742.7,32,46,31,13.95
-Texas,TX,August,0.09,8,45,180782.4,89,39,31,13.95
-Texas,TX,September,0.04,9,106,183595.1,57,30,26,11.7
-Texas,TX,October,0.85,10,128,185676,15,22,26,11.7
-Texas,TX,November,0.98,11,17,186798.9,63,20,26,11.7
-Texas,TX,December,0.97,12,18,191570.2,38,26,26,11.7
-Utah,UT,January,0.05,1,79,29907.7,18,37,23,51
-Utah,UT,February,0.05,2,16,29722.7,22,54,23,51.5
-Utah,UT,March,0.3,3,173,30020.1,30,67,23,50.3
-Utah,UT,April,0.9,4,79,30112.2,17,75,23,49.8
-Utah,UT,May,0.92,5,250,30158.3,12,78,41,52.1
-Utah,UT,June,0.04,6,880,26863.4,74,72,41,50.7
-Utah,UT,July,0.91,7,222,29444.5,6,60,41,48.4
-Utah,UT,August,0.08,8,86,29792.3,39,49,41,49.3
-Utah,UT,September,0.93,9,49,30094,7,36,42,48.6
-Utah,UT,October,0.91,10,11,30402.8,10,24,42,53.2
-Utah,UT,November,0.15,11,747,30582.1,17,12,42,50.3
-Utah,UT,December,0.01,12,349,31108.3,32,14,42,51.2
-Vermont,VT,January,0.74,1,29,29907.7,7,27,52,23.4
-Vermont,VT,February,0.58,2,82,29722.7,22,36,52,23.4
-Vermont,VT,March,0.94,3,283,30020.1,45,41,52,23.4
-Vermont,VT,April,0.06,4,178,30112.2,2,44,52,23.4
-Vermont,VT,May,0.71,5,89,30158.3,38,42,31,13.95
-Vermont,VT,June,0.94,6,67,26863.4,21,40,31,13.95
-Vermont,VT,July,0.98,7,317,29444.5,39,37,31,13.95
-Vermont,VT,August,0.78,8,338,29792.3,47,37,31,13.95
-Vermont,VT,September,0.94,9,80,30094,34,41,31,13.95
-Vermont,VT,October,0.03,10,209,30402.8,36,48,31,13.95
-Vermont,VT,November,0.04,11,151,30582.1,137,56,31,13.95
-Vermont,VT,December,0.87,12,174,31108.3,5,63,31,13.95
-Virginia,VA,January,0.09,1,144,484484.5,18,66,39,17.55
-Virginia,VA,February,0,2,35,485794,17,66,39,17.55
-Virginia,VA,March,0.92,3,359,492687.7,21,61,39,17.55
-Virginia,VA,April,0.02,4,90,493830,30,51,39,17.55
-Virginia,VA,May,0.85,5,103,489002.6,28,38,40,18
-Virginia,VA,June,0.31,6,91,453483.3,61,19,40,18
-Virginia,VA,July,0.09,7,50,482661.5,3,7,40,18
-Virginia,VA,August,0.18,8,96,490490,38,16,40,18
-Virginia,VA,September,0.94,9,36,496829.7,13,33,31,13.95
-Virginia,VA,October,0.2,10,74,501883.3,2,46,31,13.95
-Virginia,VA,November,0.86,11,57,506619,1,55,31,13.95
-Virginia,VA,December,0.76,12,87,516071.8,6,55,31,13.95
-Virgin Islands,VI,January,0.01,1,66,528055.6,7,50,27,12.15
-Virgin Islands,VI,February,0.07,2,80,528075.3,12,45,27,12.15
-Virgin Islands,VI,March,0.15,3,92,534990.3,16,38,27,12.15
-Virgin Islands,VI,April,0.77,4,57,541480.5,18,31,27,12.15
-Virgin Islands,VI,May,0.95,5,43,542706.3,61,31,39,17.55
-Virgin Islands,VI,June,0.92,6,97,509713.1,14,36,39,17.55
-Virgin Islands,VI,July,0.14,7,68,552802,22,47,39,17.55
-Virgin Islands,VI,August,0.99,8,48,550202.8,30,59,39,17.55
-Virgin Islands,VI,September,0.66,9,40,565174.8,31,66,29,13.05
-Virgin Islands,VI,October,0.12,10,56,575469.8,23,67,29,13.05
-Virgin Islands,VI,November,0.87,11,30,575027.3,59,61,29,13.05
-Virgin Islands,VI,December,0,12,76,584844.1,4,48,29,13.05
-Washington,WA,January,0.03,1,80,72387.6,12,32,40,33.1
-Washington,WA,February,0.42,2,82,72585.7,18,13,40,33.6
-Washington,WA,March,0.37,3,80,73012.6,65,3,40,33.4
-Washington,WA,April,0.93,4,83,72547.7,56,21,40,33.7
-Washington,WA,May,0.8,5,35,72709.9,42,39,48,33.2
-Washington,WA,June,0.03,6,75,66410.5,124,54,48,32.8
-Washington,WA,July,0.25,7,9,71330.2,24,65,48,32.5
-Washington,WA,August,0.83,8,67,71326.3,38,71,48,32.8
-Washington,WA,September,1,9,79,71199.7,9,67,33,32.8
-Washington,WA,October,0.98,10,77,71156.3,18,55,33,33.4
-Washington,WA,November,0.76,11,75,71112.1,75,40,33,33.73
-Washington,WA,December,0.99,12,79,71904.8,20,26,33,32.6
-West Virginia,WV,January,0.92,1,83,301679,27,18,44,47.6
-West Virginia,WV,February,0.86,2,77,303440.2,10,17,44,47.9
-West Virginia,WV,March,0.83,3,58,303781.9,34,27,44,47.3
-West Virginia,WV,April,0.06,4,24,305775,53,39,44,47.1
-West Virginia,WV,May,0.16,5,81,299309.1,53,51,48,48.3
-West Virginia,WV,June,0.14,6,84,274801,17,62,48,46.9
-West Virginia,WV,July,0.07,7,91,297161.2,59,68,48,47.1
-West Virginia,WV,August,0.98,8,28,301148.2,40,66,48,48.3
-West Virginia,WV,September,0.82,9,61,301697,6,54,42,47.5
-West Virginia,WV,October,0.05,10,79,305501.5,49,35,42,47.8
-West Virginia,WV,November,0.96,11,76,306510.1,20,16,42,47.4
-West Virginia,WV,December,0.12,12,87,312161,10,2,42,47.2
-Wisconsin,WI,January,0.96,1,51,38041.9,32,11,35,15.75
-Wisconsin,WI,February,1,2,46,38095.1,20,31,35,15.75
-Wisconsin,WI,March,0.11,3,84,38724.8,94,44,35,15.75
-Wisconsin,WI,April,0.02,4,79,38924.8,78,58,35,15.75
-Wisconsin,WI,May,0.9,5,85,38411,28,71,24,10.8
-Wisconsin,WI,June,0.34,6,80,34787.3,67,75,24,10.8
-Wisconsin,WI,July,0.84,7,86,36185.8,16,68,24,10.8
-Wisconsin,WI,August,0.17,8,33,35690.3,8,56,24,10.8
-Wisconsin,WI,September,0.89,9,61,36417.6,9,39,26,11.7
-Wisconsin,WI,October,0.94,10,143,36362.8,50,20,26,11.7
-Wisconsin,WI,November,0.22,11,215,36354.5,18,8,26,11.7
-Wisconsin,WI,December,0.95,12,195,36465.2,10,7,26,11.7
-Wyoming,WY,January,0.06,1,42,679966.1,67,20,51,22.95
-Wyoming,WY,February,0.02,2,515,685105.9,34,42,51,22.95
-Wyoming,WY,March,0.28,3,310,698253,44,65,51,22.95
-Wyoming,WY,April,0.07,4,64,700435.2,77,86,51,22.95
-Wyoming,WY,May,0.17,5,326,700065.1,14,98,53,23.85
-Wyoming,WY,June,0.16,6,23,651683.5,85,100,53,23.85
-Wyoming,WY,July,0.64,7,413,697172.4,4,90,53,23.85
-Wyoming,WY,August,0.4,8,65,702165.6,6,69,53,23.85
-Wyoming,WY,September,0.28,9,320,715776.9,264,45,42,18.9
-Wyoming,WY,October,0.13,10,842,723014.7,12,22,42,18.9
-Wyoming,WY,November,0.68,11,108,727419,24,16,42,18.9
-Wyoming,WY,December,0.06,12,23,744609,16,31,42,18.9
+State,state_code,Month,Rain,value,car,economic,Airline,Water,NobodyNeedsYou,Air,vals
+Alabama,AL,January,0.91,1,14,202118.2,2,44,46,44.44,1
+Alabama,AL,February,0.12,2,307,202918.2,26,35,46,35.35,24
+Alabama,AL,March,0.75,3,194,204228.6,13,23,46,23.23,49
+Alabama,AL,April,0.72,4,1378,204465.8,20,10,46,32,16
+Alabama,AL,May,0.24,5,165,204004.9,16,17,34,27.76,50
+Alabama,AL,June,0.89,6,113,186912.4,4,31,34,31.31,9
+Alabama,AL,July,0.97,7,40,204205.1,68,41,34,41.41,94
+Alabama,AL,August,0.89,8,13,203700.7,12,46,34,46.46,35
+Alabama,AL,September,0.18,9,1049,207001.8,22,42,48,42.42,60
+Alabama,AL,October,0.55,10,581,209857.1,23,31,48,31.31,90
+Alabama,AL,November,0.31,11,24,210029.1,12,25,48,25.25,93
+Alabama,AL,December,0.56,12,85,213029.2,59,41,48,41.41,20
+Alaska,AK,January,0.6,1,479,53136.3,16,48,72,29.1,75
+Alaska,AK,February,0.44,2,348,53072.5,29,47,72,28.6,36
+Alaska,AK,March,0.97,3,117,53940.9,2,36,72,29.01,99
+Alaska,AK,April,0.05,4,138,53585.5,4,22,72,28.8,45
+Alaska,AK,May,0.92,5,322,53030,40,17,58,29.7,39
+Alaska,AK,June,0.69,6,263,48540.1,1,33,58,28.6,73
+Alaska,AK,July,0.01,7,55,50181.2,19,43,58,29.3,57
+Alaska,AK,August,0.05,8,219,51069.4,151,46,58,29.7,65
+Alaska,AK,September,0.5,9,139,50690.3,12,40,71,28.6,18
+Alaska,AK,October,0.09,10,342,50707.9,68,25,71,28.98,3
+Alaska,AK,November,0.78,11,130,50935.9,7,6,71,29.16,49
+Alaska,AK,December,0.48,12,299,51143.5,10,14,71,29.34,81
+Arizona,AZ,January,0.56,1,395,320391.8,324,30,41,18.45,76
+Arizona,AZ,February,0.29,2,76,323022,45,42,41,18.45,66
+Arizona,AZ,March,0.12,3,84,327457.6,254,44,41,18.45,47
+Arizona,AZ,April,0.31,4,88,330709.7,1,37,41,18.45,77
+Arizona,AZ,May,0.36,5,39,328587.6,2,24,39,17.55,26
+Arizona,AZ,June,0.59,6,201,310250,72,12,39,17.55,79
+Arizona,AZ,July,0.31,7,103,331692.4,101,19,39,17.55,91
+Arizona,AZ,August,0.47,8,332,338182.1,27,30,39,17.55,52
+Arizona,AZ,September,0.12,9,648,339659.7,96,36,35,15.75,10
+Arizona,AZ,October,0.06,10,22,344936.2,45,35,35,15.75,65
+Arizona,AZ,November,0.21,11,466,348706,60,27,35,15.75,0
+Arizona,AZ,December,0.17,12,198,357322,104,14,35,15.75,65
+Arkansas,AR,January,0.08,1,167,116488.4,1,17,68,30.6,89
+Arkansas,AR,February,0.93,2,429,116386.4,32,31,68,30.6,25
+Arkansas,AR,March,0.17,3,29,117477.3,11,39,68,30.6,84
+Arkansas,AR,April,0.72,4,406,118152.6,183,40,68,30.6,20
+Arkansas,AR,May,0.72,5,33,118972.3,38,35,80,36,81
+Arkansas,AR,June,0.07,6,469,119377.4,3,24,80,36,50
+Arkansas,AR,July,0.6,7,1209,119377.4,30,10,80,36,23
+Arkansas,AR,August,0.2,8,99,111033,103,8,80,36,82
+Arkansas,AR,September,0.98,9,27,121860.2,88,20,80,36,18
+Arkansas,AR,October,0.87,10,324,123015.2,42,28,80,36,9
+Arkansas,AR,November,0.61,11,202,123676.9,7,29,80,36,49
+Arkansas,AR,December,0.38,12,77,124837,54,23,80,36,58
+California,CA,January,0.73,1,221,2682675.6,115,16,104,46.8,14
+California,CA,February,0.99,2,27,2720749.7,61,10,104,46.8,57
+California,CA,March,0.62,3,25,2740837.8,38,23,104,46.8,72
+California,CA,April,0.22,4,194,2772640.2,56,35,104,46.8,73
+California,CA,May,0.14,5,233,2726966.1,54,41,105,47.25,30
+California,CA,June,0.84,6,674,2497144.4,33,42,105,47.25,3
+California,CA,July,0.4,7,187,2698461.3,75,37,105,47.25,68
+California,CA,August,0.22,8,54,2746311.9,265,27,105,47.25,10
+California,CA,September,0.98,9,33,2802569.5,66,17,86,38.7,99
+California,CA,October,0.28,10,4,2858504.7,117,8,86,38.7,37
+California,CA,November,0.12,11,691,2894880.5,58,4,86,38.7,37
+California,CA,December,0.77,12,483,2942968.5,41,3,86,38.7,85
+Colorado,CO,January,0.96,1,17,350431,166,5,71,31.95,57
+Colorado,CO,February,0.94,2,71,355838.1,11,9,71,31.95,30
+Colorado,CO,March,0.14,3,297,363469.4,44,11,71,31.95,2
+Colorado,CO,April,0.14,4,236,364015.4,4,13,71,31.95,1
+Colorado,CO,May,0.65,5,85,364343.9,55,11,101,45.45,47
+Colorado,CO,June,0.82,6,139,333946.6,49,4,101,45.45,32
+Colorado,CO,July,0.84,7,218,357012.4,6,13,101,45.45,65
+Colorado,CO,August,0.11,8,267,358077.8,134,26,101,45.45,33
+Colorado,CO,September,0.83,9,61,366673.8,36,35,101,45.45,68
+Colorado,CO,October,0.25,10,102,371776.5,15,40,101,45.45,18
+Colorado,CO,November,0.86,11,73,374332.1,10,39,101,45.45,5
+Colorado,CO,December,0.84,12,320,382270.9,6,30,101,45.45,75
+Connecticut,CT,January,0.52,1,115,251484.3,39,21,86,38.7,29
+Connecticut,CT,February,0.01,2,231,251650.1,19,9,86,38.7,39
+Connecticut,CT,March,0.7,3,283,251556.4,41,8,86,38.7,8
+Connecticut,CT,April,0.67,4,77,251582.1,95,20,86,38.7,36
+Connecticut,CT,May,0.88,5,79,243008.4,128,30,63,28.35,93
+Connecticut,CT,June,0.15,6,68,220597.9,21,39,63,28.35,16
+Connecticut,CT,July,0.69,7,20,237183.6,36,44,63,28.35,71
+Connecticut,CT,August,0.87,8,95,240149.7,54,43,63,28.35,78
+Connecticut,CT,September,0.96,9,137,240879.9,65,36,58,26.1,45
+Connecticut,CT,October,0.72,10,168,246676.8,17,25,58,26.1,81
+Connecticut,CT,November,0.89,11,387,248028.1,9,12,58,26.1,46
+Connecticut,CT,December,0.09,12,40,250638.6,21,1,58,26.1,61
+Delaware,DE,January,0.09,1,326,63295.1,20,4,62,27.9,56
+Delaware,DE,February,0.79,2,254,63873.7,0,8,62,27.9,27
+Delaware,DE,March,0.25,3,128,64475.1,6,9,62,27.9,25
+Delaware,DE,April,0,4,236,64930.1,1,6,62,27.9,8
+Delaware,DE,May,0.85,5,5,63390.8,25,4,64,28.8,26
+Delaware,DE,June,0.05,6,281,59399.1,25,2,64,28.8,25
+Delaware,DE,July,0.76,7,58,63312.7,192,1,64,28.8,29
+Delaware,DE,August,0.65,8,343,63024.4,6,3,64,28.8,62
+Delaware,DE,September,0.26,9,1232,63357.3,14,9,76,34.2,99
+Delaware,DE,October,0.57,10,76,64176.8,82,19,76,34.2,29
+Delaware,DE,November,0.88,11,10,64460.9,2,28,76,34.2,53
+Delaware,DE,December,0.59,12,253,65623.9,7,34,76,34.2,70
+District of Columbia,DC,January,0.78,1,131,123219.3,10,39,56,25.2,1
+District of Columbia,DC,February,0.7,2,100,124251.9,14,37,56,25.2,97
+District of Columbia,DC,March,0.02,3,178,125113.1,45,28,56,25.2,63
+District of Columbia,DC,April,0.2,4,61,125804.6,17,17,56,25.2,40
+District of Columbia,DC,May,0.53,5,2,125559.2,116,4,40,18,93
+District of Columbia,DC,June,0.71,6,15,118134.2,35,7,40,18,4
+District of Columbia,DC,July,0.89,7,18,122164.7,193,15,40,18,19
+District of Columbia,DC,August,0.85,8,25,124082.9,20,19,40,18,61
+District of Columbia,DC,September,0.51,9,17,124274.3,51,22,48,21.6,65
+District of Columbia,DC,October,0.98,10,3,126538.3,80,22,48,21.6,98
+District of Columbia,DC,November,0.68,11,0,128234.6,158,17,48,21.6,53
+District of Columbia,DC,December,0.46,12,0,128884.7,92,12,48,21.6,38
+Florida,FL,January,0.79,1,30,957610.1,51,9,51,22.95,30
+Florida,FL,February,0.01,2,29,960872.8,45,8,51,22.95,99
+Florida,FL,March,0.08,3,1,968246.5,41,11,51,22.95,96
+Florida,FL,April,0.66,4,6,975960.5,29,17,51,22.95,61
+Florida,FL,May,0.66,5,20,969585.9,69,25,64,28.8,87
+Florida,FL,June,0.87,6,19,891076.7,37,32,64,28.8,82
+Florida,FL,July,0.73,7,13,966543.8,35,36,64,28.8,37
+Florida,FL,August,0.07,8,12,958451.2,165,35,64,28.8,13
+Florida,FL,September,0.62,9,17,991701,11,28,54,24.3,11
+Florida,FL,October,0.75,10,10,1023722.9,28,16,54,24.3,26
+Florida,FL,November,1,11,3,1038486.4,74,2,54,24.3,26
+Florida,FL,December,0.96,12,5,1064392.2,76,2,54,24.3,33
+Georgia,GA,January,0.71,1,2,549780.5,43,13,50,48.1,57
+Georgia,GA,February,0.99,2,7,556686.4,21,18,50,48.6,60
+Georgia,GA,March,0.85,3,8,560984.6,23,18,50,48.3,42
+Georgia,GA,April,0.77,4,8,562006.2,62,11,50,48.7,59
+Georgia,GA,May,0.75,5,17,551028,5,2,52,47.9,7
+Georgia,GA,June,0.16,6,6,506655.7,45,3,52,47.8,97
+Georgia,GA,July,0.54,7,8,544494.2,18,16,52,46.9,69
+Georgia,GA,August,0.51,8,7,548285.2,18,27,52,47.8,19
+Georgia,GA,September,0.19,9,1,561223.1,13,35,62,49.4,63
+Georgia,GA,October,0.95,10,6,575976.2,55,37,62,47.7,34
+Georgia,GA,November,0.74,11,10,577786.3,10,32,62,48.4,39
+Georgia,GA,December,0.15,12,16,586183,41,20,62,48.2,33
+Hawaii,HI,January,0.91,1,18,78923.8,25,5,69,21.2,91
+Hawaii,HI,February,0.45,2,1,78928.8,19,4,69,21.1,36
+Hawaii,HI,March,0.93,3,15,79498.5,12,14,69,20.7,45
+Hawaii,HI,April,0.99,4,8,79502.4,16,19,69,21.6,47
+Hawaii,HI,May,0.35,5,6,76310.1,9,15,91,21.9,79
+Hawaii,HI,June,0.04,6,19,65797.9,18,4,91,21.8,52
+Hawaii,HI,July,0.81,7,1,68278.7,23,9,91,20.5,97
+Hawaii,HI,August,0.65,8,16,70050.9,27,23,91,21.3,98
+Hawaii,HI,September,0.76,9,2,71310.6,31,33,65,21.1,17
+Hawaii,HI,October,0.56,10,28,74502,9,39,65,21,77
+Hawaii,HI,November,0.8,11,80,76530.9,23,37,65,20.9,60
+Hawaii,HI,December,0.88,12,3,75845.4,23,27,65,21.4,19
+Idaho,ID,January,0.61,1,1,73083.7,42,9,62,27.9,40
+Idaho,ID,February,0.9,2,24,73827.2,14,12,62,27.9,14
+Idaho,ID,March,0.17,3,1,74667.5,13,18,62,27.9,25
+Idaho,ID,April,0.06,4,8,75072,33,16,62,27.9,9
+Idaho,ID,May,0.08,5,4,75726.1,25,10,72,32.4,30
+Idaho,ID,June,0.83,6,7,70182.8,27,1,72,32.4,23
+Idaho,ID,July,0.63,7,4,76930.1,14,13,72,32.4,46
+Idaho,ID,August,0.92,8,161,77743,34,25,72,32.4,1
+Idaho,ID,September,0.18,9,80,79045.1,70,33,88,39.6,89
+Idaho,ID,October,0.11,10,539,78896.8,13,35,88,39.6,68
+Idaho,ID,November,0.95,11,140,79557.9,59,28,88,39.6,6
+Idaho,ID,December,0.49,12,58,82875.4,48,15,88,39.6,77
+Illinois,IL,January,0.93,1,15,775007.5,39,11,52,23.4,62
+Illinois,IL,February,0.54,2,7,774750.5,88,21,52,23.4,24
+Illinois,IL,March,0.95,3,600,779650.4,7,26,52,23.4,19
+Illinois,IL,April,0.63,4,192,774584.1,74,22,52,23.4,94
+Illinois,IL,May,0.23,5,18,757923.8,24,14,45,20.25,65
+Illinois,IL,June,0.43,6,27,691519.8,80,4,45,20.25,97
+Illinois,IL,July,0.64,7,153,741584.2,27,9,45,20.25,47
+Illinois,IL,August,0.94,8,151,746512.4,7,21,45,20.25,81
+Illinois,IL,September,0.88,9,64,767548.8,26,32,51,22.95,21
+Illinois,IL,October,0.82,10,65,777898.6,51,38,51,22.95,16
+Illinois,IL,November,0.79,11,92,780279.4,1,37,51,22.95,37
+Illinois,IL,December,0.91,12,78,794516.3,22,28,51,22.95,15
+Indiana,IN,January,0.3,1,29,335743.9,22,11,45,47.4,72
+Indiana,IN,February,0.11,2,85,337162.6,22,11,45,47.2,23
+Indiana,IN,March,0.91,3,52,339127,63,29,45,47.6,22
+Indiana,IN,April,0.02,4,170,339575.3,15,42,45,47.1,93
+Indiana,IN,May,0.92,5,66,336332.9,19,47,41,46.7,17
+Indiana,IN,June,0.58,6,62,302558.9,3,41,41,47.8,18
+Indiana,IN,July,0.33,7,123,333913,16,30,41,46.5,61
+Indiana,IN,August,0.64,8,29,336306.7,15,19,41,47.5,58
+Indiana,IN,September,0.87,9,34,341620.8,3,7,48,48.2,91
+Indiana,IN,October,0.78,10,58,346166.2,61,0,48,47.7,77
+Indiana,IN,November,0.03,11,25,345596.3,58,2,48,47.1,53
+Indiana,IN,December,0.1,12,78,351580.2,9,14,48,47.4,33
+Iowa,IA,January,0.68,1,46,170447.3,15,30,67,30.15,26
+Iowa,IA,February,0.95,2,200,171741.9,0,44,67,30.15,48
+Iowa,IA,March,0.97,3,192,175301.6,25,54,67,30.15,94
+Iowa,IA,April,0.13,4,17,177397.1,80,55,67,30.15,55
+Iowa,IA,May,0.98,5,211,173979.9,19,49,72,32.4,55
+Iowa,IA,June,0.85,6,63,159659.9,29,35,72,32.4,4
+Iowa,IA,July,0.86,7,68,172700.1,9,15,72,32.4,31
+Iowa,IA,August,0.7,8,219,177489.6,40,11,72,32.4,83
+Iowa,IA,September,0.24,9,13,184430.3,11,28,48,21.6,16
+Iowa,IA,October,0.62,10,137,182618.1,47,41,48,21.6,96
+Iowa,IA,November,0.16,11,27,175641.3,36,48,48,21.6,3
+Iowa,IA,December,0.93,12,151,176322.1,36,47,48,21.6,82
+Kansas,KS,January,0.77,1,483,158640.1,25,37,56,25.2,86
+Kansas,KS,February,0.03,2,44,160104.8,20,23,56,25.2,11
+Kansas,KS,March,0.53,3,10,160401.7,10,11,56,25.2,34
+Kansas,KS,April,0.04,4,101,160158.1,24,4,56,25.2,64
+Kansas,KS,May,0.94,5,91,163507.5,101,4,71,31.95,35
+Kansas,KS,June,0.02,6,38,149456.2,28,13,71,31.95,4
+Kansas,KS,July,0.01,7,116,160314,25,27,71,31.95,41
+Kansas,KS,August,0.79,8,19,160115.5,11,42,71,31.95,56
+Kansas,KS,September,0.99,9,13,159725.7,45,56,61,27.45,91
+Kansas,KS,October,0.95,10,222,162553.7,112,63,61,27.45,0
+Kansas,KS,November,0.92,11,81,162695.6,21,60,61,27.45,12
+Kansas,KS,December,0.81,12,986,164188.6,47,48,61,27.45,91
+Kentucky,KY,January,0.9,1,87,190556,46,28,37,23.1,82
+Kentucky,KY,February,0.27,2,56,192370.7,9,6,37,23.4,97
+Kentucky,KY,March,0.04,3,25,193633.8,3,3,37,23.2,81
+Kentucky,KY,April,0.1,4,10,195327.2,21,20,37,23.6,49
+Kentucky,KY,May,0.73,5,696,193361,11,30,48,30.24,96
+Kentucky,KY,June,0.28,6,279,174321.8,8,36,48,30.26,42
+Kentucky,KY,July,0.38,7,21,192693.9,6,36,48,30.22,67
+Kentucky,KY,August,0.03,8,14,193208.6,15,29,48,31.04,63
+Kentucky,KY,September,0.8,9,176,195481.6,116,20,48,29.23,12
+Kentucky,KY,October,0.58,10,93,197455.1,34,12,48,30.52,48
+Kentucky,KY,November,0.86,11,27,197955.6,31,6,48,30.61,50
+Kentucky,KY,December,0.69,12,46,200380.8,78,7,48,30.37,91
+Louisiana,LA,January,0.81,1,91,237800.9,63,14,46,20.7,11
+Louisiana,LA,February,0.82,2,144,236743.1,19,27,46,20.7,37
+Louisiana,LA,March,0.96,3,9,237569.8,3,40,46,20.7,62
+Louisiana,LA,April,0.83,4,130,236064.5,66,52,46,20.7,11
+Louisiana,LA,May,0.74,5,52,228455.8,11,59,50,22.5,94
+Louisiana,LA,June,0.9,6,171,207356.9,10,58,50,22.5,44
+Louisiana,LA,July,0.86,7,45,220884.5,61,49,50,22.5,30
+Louisiana,LA,August,0.92,8,106,216989.5,5,34,50,22.5,49
+Louisiana,LA,September,0.88,9,128,217163.4,34,15,62,27.9,7
+Louisiana,LA,October,0.78,10,17,222838.7,71,23,62,27.9,40
+Louisiana,LA,November,0.63,11,18,222078.6,13,34,62,27.9,10
+Louisiana,LA,December,0.57,12,79,222530.2,23,42,62,27.9,69
+Maine,ME,January,0.8,1,16,58882.1,56,43,66,29.7,18
+Maine,ME,February,0.59,2,173,59025.4,27,38,66,29.7,51
+Maine,ME,March,0.99,3,79,59791.4,7,31,66,29.7,68
+Maine,ME,April,0.96,4,231,60514.5,9,24,66,29.7,4
+Maine,ME,May,0.98,5,228,60361.4,9,20,44,19.8,18
+Maine,ME,June,0.97,6,8,56312.8,10,20,44,19.8,28
+Maine,ME,July,1,7,159,60724.8,102,27,44,19.8,5
+Maine,ME,August,0.47,8,85,62126.8,22,35,44,19.8,51
+Maine,ME,September,0.66,9,71,62452.2,175,45,58,26.1,25
+Maine,ME,October,0.68,10,143,63374.6,37,53,58,26.1,26
+Maine,ME,November,0.94,11,17,63875.6,15,54,58,26.1,54
+Maine,ME,December,0.07,12,187,64675.9,4,50,58,26.1,25
+Maryland,MD,January,0.14,1,14,364881,17,38,52,23.4,72
+Maryland,MD,February,0.99,2,172,368231.4,6,24,52,23.4,41
+Maryland,MD,March,0.24,3,687,369344.7,37,7,52,23.4,21
+Maryland,MD,April,0.95,4,33,369768.6,2,13,52,23.4,72
+Maryland,MD,May,0.02,5,8,360145.3,39,31,64,28.8,69
+Maryland,MD,June,0.11,6,111,334847,18,48,64,28.8,83
+Maryland,MD,July,0.18,7,97,356775.6,27,42,64,28.8,39
+Maryland,MD,August,0.91,8,18,357768,4,30,64,28.8,47
+Maryland,MD,September,0.95,9,50,368282.1,13,25,58,26.1,79
+Maryland,MD,October,0.98,10,6,365495.6,25,23,58,26.1,22
+Maryland,MD,November,0.92,11,2,368244.1,57,27,58,26.1,25
+Maryland,MD,December,0.94,12,33,372262.5,36,35,58,26.1,61
+Massachusetts,MA,January,0.97,1,6,510381.5,31,45,46,20.7,40
+Massachusetts,MA,February,0.95,2,129,512748.8,71,51,46,20.7,7
+Massachusetts,MA,March,0.06,3,15,515787.7,34,51,46,20.7,65
+Massachusetts,MA,April,0.96,4,5,517765.4,12,47,46,20.7,96
+Massachusetts,MA,May,0.81,5,3,516216.1,11,41,31,13.95,18
+Massachusetts,MA,June,0.02,6,1,469194.2,89,22,31,13.95,96
+Massachusetts,MA,July,0.15,7,67,500082.5,60,2,31,13.95,87
+Massachusetts,MA,August,0.02,8,32,514511,39,11,31,13.95,98
+Massachusetts,MA,September,0.01,9,4,520143.7,55,26,41,18.45,88
+Massachusetts,MA,October,0.04,10,3,530568.1,20,38,41,18.45,62
+Massachusetts,MA,November,0.85,11,30,537050.8,61,48,41,18.45,81
+Massachusetts,MA,December,0.05,12,20,544645.6,29,53,41,18.45,61
+Michigan,MI,January,0.31,1,10,464485.1,13,54,39,17.55,75
+Michigan,MI,February,0,2,4,465850.2,19,47,39,17.55,28
+Michigan,MI,March,0.85,3,5,469360.9,48,37,39,17.55,32
+Michigan,MI,April,0.24,4,34,468731.7,33,28,39,17.55,37
+Michigan,MI,May,0.04,5,2,461865.4,34,21,51,22.95,45
+Michigan,MI,June,0.13,6,14,406391.9,13,16,51,22.95,21
+Michigan,MI,July,0.98,7,10,461198.3,29,14,51,22.95,32
+Michigan,MI,August,0.02,8,38,464365.7,19,15,51,22.95,37
+Michigan,MI,September,0.13,9,10,469497.8,12,18,51,22.95,7
+Michigan,MI,October,0.92,10,9,485125,27,22,51,22.95,20
+Michigan,MI,November,0.96,11,8,484788.4,15,26,51,22.95,2
+Michigan,MI,December,0.1,12,0,487700.9,14,25,51,22.95,48
+Minnesota,MN,January,0.86,1,1,337487.5,26,18,57,25.65,0
+Minnesota,MN,February,0.9,2,11,339308.7,61,8,57,25.65,87
+Minnesota,MN,March,0.08,3,2,342364.7,31,6,57,25.65,27
+Minnesota,MN,April,0,4,18,343067.7,25,17,57,25.65,94
+Minnesota,MN,May,0.03,5,8,337282.4,95,22,71,31.95,58
+Minnesota,MN,June,0.99,6,47,309700.2,45,27,71,31.95,96
+Minnesota,MN,July,0.93,7,26,331040.1,15,30,71,31.95,33
+Minnesota,MN,August,0.07,8,1,335935.5,43,25,71,31.95,80
+Minnesota,MN,September,0.09,9,18,339113.7,27,18,68,30.6,37
+Minnesota,MN,October,0.09,10,12,348488.9,17,8,68,30.6,62
+Minnesota,MN,November,0.78,11,14,346693.2,8,9,68,30.6,73
+Minnesota,MN,December,0.12,12,20,350521.5,68,14,68,30.6,99
+Mississippi,MS,January,0.74,1,64,100004.5,52,17,65,29.25,53
+Mississippi,MS,February,0.94,2,1054,100214.1,81,16,65,29.25,85
+Mississippi,MS,March,0.05,3,638,101231.3,25,8,65,29.25,28
+Mississippi,MS,April,0.84,4,3847,102481.5,93,5,65,29.25,93
+Mississippi,MS,May,0.01,5,622,102637.9,98,17,65,29.25,38
+Mississippi,MS,June,0.86,6,295,102849.8,81,28,65,29.25,90
+Mississippi,MS,July,0.98,7,116,100612.3,73,32,65,29.25,29
+Mississippi,MS,August,0.77,8,36,101007.9,25,32,65,29.25,4
+Mississippi,MS,September,0.18,9,3331,103755.6,28,28,62,27.9,34
+Mississippi,MS,October,0.05,10,1664,104810.9,93,19,62,27.9,88
+Mississippi,MS,November,0.97,11,85,104449.7,20,9,62,27.9,84
+Mississippi,MS,December,0.04,12,214,104397.6,15,10,62,27.9,73
+Missouri,MO,January,0.97,1,2,288322.9,19,23,61,27.45,10
+Missouri,MO,February,0.07,2,14,289665.3,11,36,61,27.45,52
+Missouri,MO,March,0.88,3,0,292273.4,48,46,61,27.45,74
+Missouri,MO,April,0.94,4,13,292216.5,10,51,61,27.45,84
+Missouri,MO,May,0.01,5,79,288830.3,23,49,55,24.75,44
+Missouri,MO,June,0.1,6,8,266048.3,14,41,55,24.75,40
+Missouri,MO,July,0.14,7,1,286515.9,26,29,55,24.75,0
+Missouri,MO,August,0.16,8,7,289622,10,15,55,24.75,56
+Missouri,MO,September,0.96,9,11,291959.7,9,4,55,24.75,21
+Missouri,MO,October,0.08,10,2,296052.5,81,4,55,24.75,16
+Missouri,MO,November,0.96,11,12,296322.7,35,12,55,24.75,66
+Missouri,MO,December,0.03,12,1,298414.3,58,16,55,24.75,39
+Montana,MT,January,0.9,1,1194,46678,8,16,64,28.8,52
+Montana,MT,February,0.01,2,897,46539.6,92,12,64,28.8,32
+Montana,MT,March,0.91,3,337,47171.8,16,8,64,28.8,12
+Montana,MT,April,0.81,4,426,47155.5,39,8,64,28.8,12
+Montana,MT,May,0.97,5,780,46849,91,14,50,22.5,77
+Montana,MT,June,0.07,6,828,44159.2,17,22,50,22.5,7
+Montana,MT,July,0.88,7,164,47814.1,14,30,50,22.5,68
+Montana,MT,August,0.01,8,567,48179.4,8,38,50,22.5,74
+Montana,MT,September,0.79,9,343,48378.2,10,42,47,21.15,46
+Montana,MT,October,0.22,10,1084,48684.8,26,42,47,21.15,57
+Montana,MT,November,1,11,394,48869.4,4,36,47,21.15,29
+Montana,MT,December,0.03,12,752,49972.5,2,24,47,21.15,38
+Nebraska,NE,January,0.87,1,987,116811.1,2,10,56,25.2,49
+Nebraska,NE,February,0.02,2,213,117510.4,58,10,56,25.2,10
+Nebraska,NE,March,0.2,3,233,119333.5,11,21,56,25.2,90
+Nebraska,NE,April,0.76,4,317,120759.9,7,27,56,25.2,86
+Nebraska,NE,May,0.11,5,104,119303.3,58,28,63,28.35,29
+Nebraska,NE,June,0.19,6,584,111597.6,16,22,63,28.35,67
+Nebraska,NE,July,0.95,7,398,119738.9,12,13,63,28.35,10
+Nebraska,NE,August,0.75,8,1046,121926.3,4,6,63,28.35,11
+Nebraska,NE,September,0.88,9,1538,120744.5,108,2,72,32.4,46
+Nebraska,NE,October,0.01,10,100,122711.6,44,3,72,32.4,82
+Nebraska,NE,November,0.03,11,1230,122550.7,2,8,72,32.4,61
+Nebraska,NE,December,0.83,12,652,122537.7,17,17,72,32.4,82
+Nevada,NV,January,0.24,1,508,154866.9,35,25,72,32.4,92
+Nevada,NV,February,0.16,2,1129,155909.4,12,32,72,32.4,36
+Nevada,NV,March,0.07,3,67,157766.3,23,36,72,32.4,36
+Nevada,NV,April,0.01,4,1064,159293.9,7,31,72,32.4,14
+Nevada,NV,May,0.26,5,141,157147.1,29,20,65,29.25,96
+Nevada,NV,June,0.17,6,1217,132382.1,10,6,65,29.25,2
+Nevada,NV,July,0.3,7,3874,147506.8,12,13,65,29.25,12
+Nevada,NV,August,0.31,8,276,148934.1,15,27,65,29.25,75
+Nevada,NV,September,0.14,9,62,152028.4,127,32,48,21.6,23
+Nevada,NV,October,0.06,10,850,158620.1,40,27,48,21.6,2
+Nevada,NV,November,0.06,11,560,162356.1,47,15,48,21.6,26
+Nevada,NV,December,0.14,12,267,165264.7,16,1,48,21.6,53
+New Hampshire,NH,January,0.35,1,614,77160.5,28,-15,42,18.9,98
+New Hampshire,NH,February,0.88,2,127,76712.6,17,-13,42,18.9,13
+New Hampshire,NH,March,0.86,3,489,76756,29,-1,42,18.9,63
+New Hampshire,NH,April,0.91,4,33,76647.1,15,13,42,18.9,46
+New Hampshire,NH,May,0.89,5,578,77494.8,33,25,67,30.15,35
+New Hampshire,NH,June,0.09,6,366,70274.6,39,34,67,30.15,2
+New Hampshire,NH,July,0.15,7,2260,77056.3,12,39,67,30.15,33
+New Hampshire,NH,August,0.82,8,355,78884.8,35,36,67,30.15,81
+New Hampshire,NH,September,0.26,9,169,79001.1,124,23,55,24.75,36
+New Hampshire,NH,October,0.25,10,54,83106.2,11,5,55,24.75,45
+New Hampshire,NH,November,1,11,18,83544.8,70,2,55,24.75,1
+New Hampshire,NH,December,0.11,12,1714,86292.9,17,20,55,24.75,40
+New Jersey,NJ,January,0.04,1,854,555174.5,31,30,50,22.5,65
+New Jersey,NJ,February,0.22,2,52,558323.5,62,34,50,22.5,11
+New Jersey,NJ,March,1,3,111,562684.5,100,28,50,22.5,60
+New Jersey,NJ,April,0.92,4,631,562412.5,34,15,50,22.5,7
+New Jersey,NJ,May,0.12,5,455,556862.9,68,2,47,21.15,61
+New Jersey,NJ,June,0.97,6,166,497580.7,10,9,47,21.15,66
+New Jersey,NJ,July,0.02,7,215,541270,11,26,47,21.15,32
+New Jersey,NJ,August,0.11,8,436,545581.5,35,41,47,21.15,97
+New Jersey,NJ,September,0.93,9,480,559072.4,24,52,61,27.45,3
+New Jersey,NJ,October,0.17,10,109,563421.3,44,55,61,27.45,66
+New Jersey,NJ,November,0.68,11,310,567906.5,51,48,61,27.45,45
+New Jersey,NJ,December,0.19,12,193,577172.6,135,6,61,27.45,61
+New Mexico,NM,January,0.05,1,558,92668,74,27,64,28.8,69
+New Mexico,NM,February,0.12,2,225,94177.9,33,44,64,28.8,51
+New Mexico,NM,March,0.05,3,455,96095,13,53,64,28.8,39
+New Mexico,NM,April,0.28,4,560,96648.8,75,49,64,28.8,35
+New Mexico,NM,May,0.06,5,149,96699.5,21,36,73,32.85,88
+New Mexico,NM,June,0.3,6,116,87891.1,78,20,73,32.85,19
+New Mexico,NM,July,0.33,7,181,92675.2,36,5,73,32.85,69
+New Mexico,NM,August,0.78,8,61,92719.3,69,13,73,32.85,20
+New Mexico,NM,September,0.98,9,341,92692.4,21,30,66,29.7,39
+New Mexico,NM,October,0.43,10,237,92652.9,10,45,66,29.7,12
+New Mexico,NM,November,0,11,588,93601.6,34,57,66,29.7,70
+New Mexico,NM,December,0.27,12,818,95553.3,24,59,66,29.7,2
+New York,NY,January,0.82,1,61,1485313.9,69,51,49,22.05,61
+New York,NY,February,0.03,2,655,1504078.5,39,35,49,22.05,37
+New York,NY,March,0.15,3,342,1506282.5,35,15,47,21.15,75
+New York,NY,April,0.94,4,292,1507658.7,31,11,47,21.15,31
+New York,NY,May,0.08,5,623,1489185.1,49,33,67,30.15,92
+New York,NY,June,0.73,6,47,1347704.9,37,51,67,30.15,87
+New York,NY,July,0.17,7,592,1442509.1,42,63,67,30.15,96
+New York,NY,August,0.92,8,77,1450628.9,108,65,67,30.15,19
+New York,NY,September,0.03,9,622,1471477.6,58,59,77,34.65,97
+New York,NY,October,0.23,10,2017,1504178.3,41,46,77,34.65,95
+New York,NY,November,0.14,11,148,1525423.5,27,30,77,34.65,19
+New York,NY,December,0.95,12,41,1558037.6,31,17,77,34.65,2
+North Carolina,NC,January,0.9,1,472,506751.7,45,11,69,31.05,51
+North Carolina,NC,February,0.97,2,310,510250.2,18,10,69,31.05,1
+North Carolina,NC,March,0.83,3,146,515076.9,20,10,69,31.05,9
+North Carolina,NC,April,0.99,4,341,519260.5,13,18,69,31.05,40
+North Carolina,NC,May,0.04,5,76,517199.1,38,34,42,18.9,88
+North Carolina,NC,June,0.96,6,445,474916.8,80,45,42,18.9,8
+North Carolina,NC,July,0.82,7,31,514459.9,27,46,42,18.9,8
+North Carolina,NC,August,0.09,8,476,520056.7,13,35,42,18.9,68
+North Carolina,NC,September,0.98,9,272,531416.3,30,16,56,25.2,98
+North Carolina,NC,October,0.89,10,1587,538422.9,164,15,56,25.2,38
+North Carolina,NC,November,0.1,11,267,542333.1,29,41,56,25.2,94
+North Carolina,NC,December,0.85,12,126,555562.7,79,55,56,25.2,80
+North Dakota,ND,January,0.03,1,62,56160.9,40,63,54,36.72,13
+North Dakota,ND,February,0.98,2,18,56452.6,35,55,54,36.72,82
+North Dakota,ND,March,0.1,3,1617,56594.7,46,35,54,36.72,55
+North Dakota,ND,April,0.09,4,810,56333.2,55,13,54,36.72,4
+North Dakota,ND,May,0.07,5,33,56253.2,52,5,40,26.8,88
+North Dakota,ND,June,0.2,6,103,51736.6,31,24,40,26.8,10
+North Dakota,ND,July,0.93,7,563,53492.7,3,39,40,26.8,84
+North Dakota,ND,August,0.71,8,442,53131.7,16,48,40,26.8,58
+North Dakota,ND,September,0.14,9,171,53625.5,56,45,15,28.5,62
+North Dakota,ND,October,0.93,10,211,53898.7,101,34,15,28.5,60
+North Dakota,ND,November,0.1,11,344,54135.8,36,17,15,28.5,15
+North Dakota,ND,December,0.97,12,348,53554.2,34,16,15,28.5,34
+Ohio,OH,January,0.27,1,55,606905.1,30,39,73,48.2,47
+Ohio,OH,February,0.92,2,257,611108.6,45,58,73,48.8,92
+Ohio,OH,March,0.06,3,150,616757.2,15,69,73,47.9,9
+Ohio,OH,April,0.12,4,526,618234.4,9,73,73,49.3,69
+Ohio,OH,May,0.89,5,169,608669.9,59,68,61,48.8,25
+Ohio,OH,June,0.11,6,297,552493.3,93,52,61,48.1,3
+Ohio,OH,July,0.16,7,427,603832.5,40,39,61,47.7,61
+Ohio,OH,August,0.83,8,64,611578.8,7,27,61,46.2,64
+Ohio,OH,September,0.13,9,117,617796,9,18,11,48.5,39
+Ohio,OH,October,0.01,10,136,627586.2,32,15,11,50.1,2
+Ohio,OH,November,0.01,11,43,629811.9,17,16,11,48.6,61
+Ohio,OH,December,0.19,12,243,641954.1,4,22,11,49.3,44
+Oklahoma,OK,January,0.84,1,161,199653.6,84,30,57,25.65,2
+Oklahoma,OK,February,0.98,2,458,199926.6,44,33,57,25.65,74
+Oklahoma,OK,March,0.96,3,720,202903.2,184,29,57,25.65,68
+Oklahoma,OK,April,0,4,39,202162.6,39,25,57,25.65,38
+Oklahoma,OK,May,0.9,5,575,199196.3,63,10,53,23.85,89
+Oklahoma,OK,June,0.9,6,310,183394.4,3,5,53,23.85,62
+Oklahoma,OK,July,0.79,7,216,195221.3,25,20,53,23.85,99
+Oklahoma,OK,August,0.91,8,506,192129.8,16,30,53,23.85,44
+Oklahoma,OK,September,0.04,9,20,194233.1,14,39,74,33.3,3
+Oklahoma,OK,October,0.02,10,472,194128.9,10,43,74,33.3,19
+Oklahoma,OK,November,0.96,11,64,191043.1,80,45,74,33.3,7
+Oklahoma,OK,December,0.86,12,595,193515,3,46,74,33.3,73
+Oregon,OR,January,0.8,1,1857,217500.9,4,38,72,34.2,25
+Oregon,OR,February,0.05,2,128,218191.9,14,27,72,34.1,90
+Oregon,OR,March,0.94,3,21,220157.4,9,15,72,34.4,93
+Oregon,OR,April,0.87,4,378,222501.8,8,3,72,34.1,16
+Oregon,OR,May,0.95,5,250,221376.7,16,2,73,33.7,3
+Oregon,OR,June,0.89,6,121,203537.3,83,9,73,33.9,7
+Oregon,OR,July,1,7,273,218088.4,20,7,73,33.4,35
+Oregon,OR,August,0.08,8,51,219972.1,29,4,73,33.6,97
+Oregon,OR,September,0.95,9,934,223980.4,3,13,65,33.4,10
+Oregon,OR,October,0.77,10,64,226780.1,13,23,65,34.5,11
+Oregon,OR,November,0.88,11,1054,227437.1,2,36,65,34.7,81
+Oregon,OR,December,0.92,12,638,233718.7,38,48,65,34.9,52
+Pennsylvania,PA,January,0.87,1,3847,709027.9,36,56,40,32,74
+Pennsylvania,PA,February,0.66,2,622,713563.3,12,61,40,32,57
+Pennsylvania,PA,March,0.08,3,295,718536.4,47,58,40,32,85
+Pennsylvania,PA,April,0.12,4,116,719115.1,44,46,40,32,90
+Pennsylvania,PA,May,0.99,5,36,708225.7,8,29,55,31.35,75
+Pennsylvania,PA,June,0.99,6,3331,633368,36,14,55,31.35,59
+Pennsylvania,PA,July,0.93,7,1664,687974.9,24,],55,31.35,28
+Pennsylvania,PA,August,0.01,8,85,694260.9,4,3,55,31.35,27
+Pennsylvania,PA,September,0.04,9,214,700244.2,67,8,64,36.48,68
+Pennsylvania,PA,October,0.02,10,1194,708188.4,4,9,64,36.48,20
+Pennsylvania,PA,November,0.99,11,897,710466.4,47,11,64,36.48,95
+Pennsylvania,PA,December,0.21,12,337,724993.3,40,10,64,36.48,62
+Puerto Rico,PR,January,0.07,1,426,53455.3,24,6,102,45.9,88
+Puerto Rico,PR,February,0.93,2,780,53389.5,1,3,102,45.9,35
+Puerto Rico,PR,March,0.06,3,828,53279.4,20,7,102,45.9,22
+Puerto Rico,PR,April,0.7,4,164,53521.5,3,12,102,45.9,86
+Puerto Rico,PR,May,0.95,5,567,52990.8,5,18,41,18.45,65
+Puerto Rico,PR,June,0.8,6,343,47834.2,59,27,41,18.45,86
+Puerto Rico,PR,July,0.99,7,1084,52235.6,3,34,41,18.45,22
+Puerto Rico,PR,August,0.06,8,394,53003.9,59,38,41,18.45,7
+Puerto Rico,PR,September,0.99,9,752,52818.7,10,43,104,46.8,25
+Puerto Rico,PR,October,0.57,10,987,54858.9,13,39,104,46.8,96
+Puerto Rico,PR,November,0.95,11,213,54877.3,18,30,104,46.8,62
+Puerto Rico,PR,December,0.04,12,233,55869.2,49,18,104,46.8,37
+Rhode Island,RI,January,0.83,1,317,211107,44,6,79,35.55,66
+Rhode Island,RI,February,0.03,2,104,211455.5,9,3,79,35.55,89
+Rhode Island,RI,March,0.08,3,584,214257.7,25,8,79,35.55,12
+Rhode Island,RI,April,0.94,4,398,216130.9,2,15,79,35.55,40
+Rhode Island,RI,May,0.99,5,1046,210301.6,45,21,83,37.35,65
+Rhode Island,RI,June,0.1,6,1538,215335.2,24,27,83,37.35,56
+Rhode Island,RI,July,0.06,7,100,213350.3,2,28,83,37.35,9
+Rhode Island,RI,August,0.17,8,1230,213949.1,5,25,83,37.35,70
+Rhode Island,RI,September,0.95,9,652,216766.4,43,25,64,28.8,67
+Rhode Island,RI,October,0.02,10,508,221140.1,9,27,64,28.8,27
+Rhode Island,RI,November,0.22,11,1129,219640.7,10,32,64,28.8,50
+Rhode Island,RI,December,0.12,12,67,224632.6,1,39,64,28.8,3
+South Carolina,SC,January,0.99,1,1064,46365.7,9,48,60,27,11
+South Carolina,SC,February,0.02,2,141,46273,81,53,60,27,51
+South Carolina,SC,March,0.96,3,1217,46850.7,9,58,60,27,89
+South Carolina,SC,April,0.73,4,3874,47112.8,11,62,60,27,72
+South Carolina,SC,May,0.01,5,276,47332.1,4,65,51,22.95,29
+South Carolina,SC,June,0.02,6,62,45063.5,4,67,51,22.95,89
+South Carolina,SC,July,0.14,7,850,48277.3,9,64,51,22.95,84
+South Carolina,SC,August,0.03,8,560,48936.6,5,60,51,22.95,75
+South Carolina,SC,September,0.87,9,267,49114.3,109,50,52,23.4,49
+South Carolina,SC,October,0.13,10,614,49673.7,35,38,52,23.4,59
+South Carolina,SC,November,0.17,11,127,49523.8,95,30,52,23.4,86
+South Carolina,SC,December,0.1,12,192,49920.1,29,26,52,23.4,72
+South Dakota,SD,January,0.05,1,18,328581.6,1,25,51,22.95,76
+South Dakota,SD,February,0.91,2,27,329960.1,6,31,51,22.95,4
+South Dakota,SD,March,0.81,3,153,333396.5,14,40,51,22.95,14
+South Dakota,SD,April,0.84,4,151,332768.1,7,50,51,22.95,84
+South Dakota,SD,May,0.89,5,64,334634.1,11,55,64,28.8,97
+South Dakota,SD,June,0.99,6,65,295265,6,59,64,28.8,81
+South Dakota,SD,July,0.96,7,92,329028.3,12,55,64,28.8,45
+South Dakota,SD,August,0.02,8,78,334888.6,5,48,64,28.8,17
+South Dakota,SD,September,0.07,9,29,346070.8,1,37,68,30.6,15
+South Dakota,SD,October,0.63,10,85,349444,50,28,68,30.6,97
+South Dakota,SD,November,0.03,11,52,352803.5,23,23,68,30.6,57
+South Dakota,SD,December,0.97,12,170,361526.3,27,23,68,30.6,77
+Tennessee,TN,January,0.06,1,66,1753036.9,13,28,57,47.2,60
+Tennessee,TN,February,0.79,2,62,1762172.9,9,39,57,47,9
+Tennessee,TN,March,0.78,3,123,1794129.8,7,55,57,47.5,5
+Tennessee,TN,April,0.03,4,29,1809786,47,67,57,46.9,42
+Tennessee,TN,May,0.21,5,34,1757627.8,3,71,47,46.8,59
+Tennessee,TN,June,0.07,6,58,1790727.8,50,71,47,48.1,64
+Tennessee,TN,July,0.99,7,25,1766666.4,3,63,47,46.2,8
+Tennessee,TN,August,0.93,8,78,1765727.5,86,51,47,47.1,27
+Tennessee,TN,September,0.23,9,46,1794614.3,7,39,34,48,29
+Tennessee,TN,October,0.02,10,176,1809123.4,12,28,34,47.4,31
+Tennessee,TN,November,0.8,11,93,1815623.2,4,20,34,46.8,37
+Tennessee,TN,December,1,12,27,1840893.4,48,14,34,47.3,86
+Texas,TX,January,0.24,1,46,170693.7,14,12,35,15.75,34
+Texas,TX,February,0,2,91,169826.4,101,15,35,15.75,3
+Texas,TX,March,0.05,3,144,173266.6,16,22,35,15.75,22
+Texas,TX,April,0.92,4,9,174366.9,51,33,35,15.75,93
+Texas,TX,May,0.11,5,130,173889.8,33,41,31,13.95,28
+Texas,TX,June,0.08,6,52,167403.9,36,46,31,13.95,0
+Texas,TX,July,0.99,7,171,177742.7,32,46,31,13.95,51
+Texas,TX,August,0.09,8,45,180782.4,89,39,31,13.95,38
+Texas,TX,September,0.04,9,106,183595.1,57,30,26,11.7,10
+Texas,TX,October,0.85,10,128,185676,15,22,26,11.7,41
+Texas,TX,November,0.98,11,17,186798.9,63,20,26,11.7,24
+Texas,TX,December,0.97,12,18,191570.2,38,26,26,11.7,69
+Utah,UT,January,0.05,1,79,29907.7,18,37,23,51,69
+Utah,UT,February,0.05,2,16,29722.7,22,54,23,51.5,69
+Utah,UT,March,0.3,3,173,30020.1,30,67,23,50.3,80
+Utah,UT,April,0.9,4,79,30112.2,17,75,23,49.8,12
+Utah,UT,May,0.92,5,250,30158.3,12,78,41,52.1,98
+Utah,UT,June,0.04,6,880,26863.4,74,72,41,50.7,50
+Utah,UT,July,0.91,7,222,29444.5,6,60,41,48.4,90
+Utah,UT,August,0.08,8,86,29792.3,39,49,41,49.3,21
+Utah,UT,September,0.93,9,49,30094,7,36,42,48.6,86
+Utah,UT,October,0.91,10,11,30402.8,10,24,42,53.2,97
+Utah,UT,November,0.15,11,747,30582.1,17,12,42,50.3,33
+Utah,UT,December,0.01,12,349,31108.3,32,14,42,51.2,46
+Vermont,VT,January,0.74,1,29,29907.7,7,27,52,23.4,38
+Vermont,VT,February,0.58,2,82,29722.7,22,36,52,23.4,88
+Vermont,VT,March,0.94,3,283,30020.1,45,41,52,23.4,90
+Vermont,VT,April,0.06,4,178,30112.2,2,44,52,23.4,57
+Vermont,VT,May,0.71,5,89,30158.3,38,42,31,13.95,87
+Vermont,VT,June,0.94,6,67,26863.4,21,40,31,13.95,41
+Vermont,VT,July,0.98,7,317,29444.5,39,37,31,13.95,50
+Vermont,VT,August,0.78,8,338,29792.3,47,37,31,13.95,70
+Vermont,VT,September,0.94,9,80,30094,34,41,31,13.95,97
+Vermont,VT,October,0.03,10,209,30402.8,36,48,31,13.95,89
+Vermont,VT,November,0.04,11,151,30582.1,137,56,31,13.95,32
+Vermont,VT,December,0.87,12,174,31108.3,5,63,31,13.95,20
+Virginia,VA,January,0.09,1,144,484484.5,18,66,39,17.55,53
+Virginia,VA,February,0,2,35,485794,17,66,39,17.55,65
+Virginia,VA,March,0.92,3,359,492687.7,21,61,39,17.55,50
+Virginia,VA,April,0.02,4,90,493830,30,51,39,17.55,73
+Virginia,VA,May,0.85,5,103,489002.6,28,38,40,18,1
+Virginia,VA,June,0.31,6,91,453483.3,61,19,40,18,86
+Virginia,VA,July,0.09,7,50,482661.5,3,7,40,18,49
+Virginia,VA,August,0.18,8,96,490490,38,16,40,18,5
+Virginia,VA,September,0.94,9,36,496829.7,13,33,31,13.95,6
+Virginia,VA,October,0.2,10,74,501883.3,2,46,31,13.95,6
+Virginia,VA,November,0.86,11,57,506619,1,55,31,13.95,90
+Virginia,VA,December,0.76,12,87,516071.8,6,55,31,13.95,14
+Virgin Islands,VI,January,0.01,1,66,528055.6,7,50,27,12.15,84
+Virgin Islands,VI,February,0.07,2,80,528075.3,12,45,27,12.15,56
+Virgin Islands,VI,March,0.15,3,92,534990.3,16,38,27,12.15,10
+Virgin Islands,VI,April,0.77,4,57,541480.5,18,31,27,12.15,59
+Virgin Islands,VI,May,0.95,5,43,542706.3,61,31,39,17.55,76
+Virgin Islands,VI,June,0.92,6,97,509713.1,14,36,39,17.55,11
+Virgin Islands,VI,July,0.14,7,68,552802,22,47,39,17.55,30
+Virgin Islands,VI,August,0.99,8,48,550202.8,30,59,39,17.55,11
+Virgin Islands,VI,September,0.66,9,40,565174.8,31,66,29,13.05,43
+Virgin Islands,VI,October,0.12,10,56,575469.8,23,67,29,13.05,36
+Virgin Islands,VI,November,0.87,11,30,575027.3,59,61,29,13.05,29
+Virgin Islands,VI,December,0,12,76,584844.1,4,48,29,13.05,21
+Washington,WA,January,0.03,1,80,72387.6,12,32,40,33.1,45
+Washington,WA,February,0.42,2,82,72585.7,18,13,40,33.6,94
+Washington,WA,March,0.37,3,80,73012.6,65,3,40,33.4,61
+Washington,WA,April,0.93,4,83,72547.7,56,21,40,33.7,31
+Washington,WA,May,0.8,5,35,72709.9,42,39,48,33.2,34
+Washington,WA,June,0.03,6,75,66410.5,124,54,48,32.8,84
+Washington,WA,July,0.25,7,9,71330.2,24,65,48,32.5,81
+Washington,WA,August,0.83,8,67,71326.3,38,71,48,32.8,34
+Washington,WA,September,1,9,79,71199.7,9,67,33,32.8,17
+Washington,WA,October,0.98,10,77,71156.3,18,55,33,33.4,77
+Washington,WA,November,0.76,11,75,71112.1,75,40,33,33.73,75
+Washington,WA,December,0.99,12,79,71904.8,20,26,33,32.6,26
+West Virginia,WV,January,0.92,1,83,301679,27,18,44,47.6,31
+West Virginia,WV,February,0.86,2,77,303440.2,10,17,44,47.9,72
+West Virginia,WV,March,0.83,3,58,303781.9,34,27,44,47.3,65
+West Virginia,WV,April,0.06,4,24,305775,53,39,44,47.1,11
+West Virginia,WV,May,0.16,5,81,299309.1,53,51,48,48.3,32
+West Virginia,WV,June,0.14,6,84,274801,17,62,48,46.9,98
+West Virginia,WV,July,0.07,7,91,297161.2,59,68,48,47.1,98
+West Virginia,WV,August,0.98,8,28,301148.2,40,66,48,48.3,11
+West Virginia,WV,September,0.82,9,61,301697,6,54,42,47.5,63
+West Virginia,WV,October,0.05,10,79,305501.5,49,35,42,47.8,69
+West Virginia,WV,November,0.96,11,76,306510.1,20,16,42,47.4,16
+West Virginia,WV,December,0.12,12,87,312161,10,2,42,47.2,66
+Wisconsin,WI,January,0.96,1,51,38041.9,32,11,35,15.75,71
+Wisconsin,WI,February,1,2,46,38095.1,20,31,35,15.75,53
+Wisconsin,WI,March,0.11,3,84,38724.8,94,44,35,15.75,83
+Wisconsin,WI,April,0.02,4,79,38924.8,78,58,35,15.75,39
+Wisconsin,WI,May,0.9,5,85,38411,28,71,24,10.8,98
+Wisconsin,WI,June,0.34,6,80,34787.3,67,75,24,10.8,29
+Wisconsin,WI,July,0.84,7,86,36185.8,16,68,24,10.8,40
+Wisconsin,WI,August,0.17,8,33,35690.3,8,56,24,10.8,81
+Wisconsin,WI,September,0.89,9,61,36417.6,9,39,26,11.7,0
+Wisconsin,WI,October,0.94,10,143,36362.8,50,20,26,11.7,21
+Wisconsin,WI,November,0.22,11,215,36354.5,18,8,26,11.7,25
+Wisconsin,WI,December,0.95,12,195,36465.2,10,7,26,11.7,51
+Wyoming,WY,January,0.06,1,42,679966.1,67,20,51,22.95,74
+Wyoming,WY,February,0.02,2,515,685105.9,34,42,51,22.95,8
+Wyoming,WY,March,0.28,3,310,698253,44,65,51,22.95,28
+Wyoming,WY,April,0.07,4,64,700435.2,77,86,51,22.95,5
+Wyoming,WY,May,0.17,5,326,700065.1,14,98,53,23.85,57
+Wyoming,WY,June,0.16,6,23,651683.5,85,100,53,23.85,29
+Wyoming,WY,July,0.64,7,413,697172.4,4,90,53,23.85,60
+Wyoming,WY,August,0.4,8,65,702165.6,6,69,53,23.85,52
+Wyoming,WY,September,0.28,9,320,715776.9,264,45,42,18.9,12
+Wyoming,WY,October,0.13,10,842,723014.7,12,22,42,18.9,71
+Wyoming,WY,November,0.68,11,108,727419,24,16,42,18.9,56
+Wyoming,WY,December,0.06,12,23,744609,16,31,42,18.9,94
