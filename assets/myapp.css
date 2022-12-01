@@ -18,12 +18,41 @@ body{
 }
 
 .mapdrop{
-    margin-top: 0.3rem;
-    padding-left: 22rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 .mapdrop2{
-    margin-top: 0.3rem;
-    padding-left: 22rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.cardRow{
+    background-color: #152336;
+}
+.cardStyle{
+ box-shadow: 0 14px 26px rgba(230,229,229,0.11);
+ transition: all 0.3s ease-out;
+
 }
 
+.cardStyle:hover{
+ box-shadow: 0 24px 36px rgba(230, 229, 229, 0.11), 0 24px 46px var(--box-shadow-color);
+}
+
+.cardBody{
+    height: 150rem;
+}
+
+.sun{
+    margin-top: 1rem;
+}
+
+.scatter{
+    margin-top: 1rem;
+}
+
+
+  
+  
+
+  
 
