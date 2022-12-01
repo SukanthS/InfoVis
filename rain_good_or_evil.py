@@ -2,15 +2,6 @@ from dash import Dash, dcc, Output, Input
 import dash_bootstrap_components as dbc   
 import plotly.express as px
 import pandas as pd      
-      
-# navbar = dbc.NavbarSimple(
-#     children=[
-#         dbc.NavItem(dbc.NavLink("Page 1", href="#")),
-#         dbc.DropdownMenu(
-#             children=[
-#                 dbc.DropdownMenuItem("More pages", header=True),
-#                 dbc.DropdownMenuItem("Page 2", href="#"),
-#                 dbc.DropdownMenuItem("Page 3", href="#"),
 
 
 df = pd.read_csv("data_rain_csv.csv")
@@ -27,8 +18,10 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 
 mytitle = dcc.Markdown(children='Rain: Good or Evil? A Geospatial Implementation With Customisable Glyphs')
-graph_left = dcc.Graph(figure={})
+
+graph_left = dcc.Graph (figure={}) 
 graph_right = dcc.Graph(figure={})
+
 dropdown_left = dcc.Dropdown(
                  options=[
                      {"label": "January", "value": 1},
@@ -46,6 +39,7 @@ dropdown_left = dcc.Dropdown(
                  multi=False,
                  value=1,
                  style={'width': "40%"})
+
 dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "January", "value": 1},
@@ -66,25 +60,21 @@ dropdown_right = dcc.Dropdown(
 
 distplot = dcc.Graph(figure={})
 
-
-
-
-
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([mytitle])
-    ], className='text-center text-primary mb-2'),
+    ], className='heading'),
     dbc.Row([
         dbc.Col([graph_left]),
-        dbc.Col([graph_right]),
+        dbc.Col([graph_right])
     ]),
     dbc.Row([
         dbc.Col([dropdown_left], width=6),
         dbc.Col([dropdown_right], width=6)
-    ], justify='center'),
+    ]),
     dbc.Row([
-        dbc.Col([distplot]),
-    ])
+        dbc.Col([distplot])
+    ], className='bar')
 ], fluid=True)
 
 
@@ -97,6 +87,7 @@ def update_graph_right(option_slcted_right):
     print(type(option_slcted_right))
     dff = df.copy()
     dff = dff[dff["value"] == option_slcted_right]
+
     fig_right = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
@@ -106,11 +97,14 @@ def update_graph_right(option_slcted_right):
         hover_data=['State', 'Rain'],
         color_continuous_scale=px.colors.sequential.YlOrRd,
         labels={'Rain': 'Amount of rainfall'},
-        template='plotly_dark'
+        template='plotly_dark'   
     )
 
+    fig_right.update_layout(geo=dict(bgcolor= '#152236'))
+    fig_right.update_layout({
+    'paper_bgcolor': 'rgba(0,0,0,0)'
+})
     return fig_right
-
 
 
 @app.callback(
@@ -125,7 +119,6 @@ def update_graph_left(option_slctd_left):
     dff = df.copy()
     dff = dff[dff["value"] == option_slctd_left]
 
-    # Plotly Express
     fig_left = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
@@ -138,10 +131,20 @@ def update_graph_left(option_slctd_left):
         template='plotly_dark'
     )
 
+    fig_left.update_layout(geo=dict(bgcolor= '#152236'))
+    fig_left.update_layout({
+    'paper_bgcolor': 'rgba(0,0,0,0)'
+})
+
     fig2 = px.histogram(
         df, x="State", y="Rain", color="Month",
-        hover_data=df.columns)
+        hover_data=df.columns
+        )
 
+    fig2.update_layout({
+    'plot_bgcolor': '#152336',
+    'paper_bgcolor': 'rgba(0,0,0,0)'
+})
 
     return fig_left, fig2
 

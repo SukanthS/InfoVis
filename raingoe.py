@@ -2,16 +2,6 @@ from dash import Dash, dcc, Output, Input
 import dash_bootstrap_components as dbc   
 import plotly.express as px
 import pandas as pd      
-      
-# navbar = dbc.NavbarSimple(
-#     children=[
-#         dbc.NavItem(dbc.NavLink("Page 1", href="#")),
-#         dbc.DropdownMenu(
-#             children=[
-#                 dbc.DropdownMenuItem("More pages", header=True),
-#                 dbc.DropdownMenuItem("Page 2", href="#"),
-#                 dbc.DropdownMenuItem("Page 3", href="#"),
-
 
 df = pd.read_csv("data_rain_tmp_csv.csv")
 
@@ -77,18 +67,18 @@ scatter = dcc.Graph(figure={})
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([mytitle])
-    ], className='text-center text-primary mb-2'),
+    ], className='heading'),
     dbc.Row([
         dbc.Col([graph_left]),
         dbc.Col([graph_right]),
     ]),
     dbc.Row([
-        dbc.Col([dropdown_left], width=6),
-        dbc.Col([dropdown_right], width=6)
-    ], justify='center'),
+        dbc.Col([dropdown_left], className='mapdrop', width=6),
+        dbc.Col([dropdown_right], className='mapdrop2', width=6)
+    ]),
     dbc.Row([
         dbc.Col([distplot]),
-    ]),
+    ], className='bar'),
     dbc.Row([
         dbc.Col([sunburst]),
     ], justify='center'),
@@ -119,7 +109,9 @@ def update_graph_right(option_slcted_right):
         template='plotly_dark',
         animation_frame='Year'
     )
-
+    fig_right.update_layout(geo=dict(bgcolor= '#152236'))
+    fig_right.update_layout({
+    'paper_bgcolor': '#152336'})
     return fig_right
 
 
@@ -151,20 +143,32 @@ def update_graph_left(option_slctd_left):
         template='plotly_dark',
         animation_frame='Year'
     )
-
+    fig_left.update_layout(geo=dict(bgcolor= '#152236'))
+    fig_left.update_layout({
+    'paper_bgcolor': '#152336'
+})
     fig2 = px.histogram(
         df, x="State", y="Rain", color="Month",
         hover_data=df.columns, animation_frame='Year')
+    fig2.update_layout({
+    'plot_bgcolor': '#152336',
+    'paper_bgcolor': '#152336'
+})
 
 
     fig3 = px.sunburst(df, path=['State', 'Month', 'Year'], values='Rain', color='State') 
+    fig3.update_layout({
+    'plot_bgcolor': '#152336',
+    'paper_bgcolor': '#152336'
+})
 
     fig4 = px.scatter(df, x="RainTmp", y="RainTmp2", animation_frame="Year", animation_group="State",
            size="Rain", color="Month", hover_name="State", facet_col="Month",
            size_max=0.99999, range_x=[0.00000,0.99999], range_y=[0.00000,0.99999])
-
-    
-
+    fig3.update_layout({
+    'plot_bgcolor': '#152336',
+    'paper_bgcolor': 'rgba(0,0,0,0)'
+})
 
     return fig_left, fig2, fig3, fig4
 
