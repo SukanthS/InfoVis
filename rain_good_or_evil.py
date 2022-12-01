@@ -146,9 +146,6 @@ app.layout = dbc.Container([
         dbc.Col([card_low_fill]),
     ]),
     dbc.Row([
-        dbc.Col([distplot]),
-    ]),
-  
         dbc.Col([distplot])
     ], className='bar')
 ], fluid=True)

@@ -5,7 +5,7 @@ import pandas as pd
 
 df = pd.read_csv("data_rain_tmp_csv.csv")
 
-df = df.groupby(['State', 'value','Month', 'RainTmp','RainTmp2','Year', 'state_code'])[['Rain']].mean()
+df = df.groupby(['State', 'value','Month', 'RainTmp','RainTmp2','Year', 'state_code','car'])[['Rain']].mean()
 #df.reset_index(inplace=False)
 df.reset_index(inplace=True)
 print(df[:5])
