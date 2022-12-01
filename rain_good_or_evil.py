@@ -15,8 +15,8 @@ import plotly.graph_objects as go
 
 
 df = pd.read_csv("data_rain_csv.csv")
-df_car = df.groupby(['State', 'Month','value', 'state_code'])[['car']].mean()
-df_rain= df.groupby(['State', 'Month','value', 'state_code'])[['Rain']].mean()
+df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
+df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
 print(df[:5])
@@ -168,7 +168,7 @@ def update_graph_right(option_slcted_right):
     print(type(option_slcted_right))
     if(option_slcted_right == 1):
         dff = df_rain.copy()
-        dff = dff[dff["value"] == option_slcted_right]
+        #dff = dff[dff["value"] == option_slcted_right]
         max_value =dff.max().values
         min_value = dff.min().values
         print(max_value)
@@ -183,10 +183,11 @@ def update_graph_right(option_slcted_right):
             color_continuous_scale=px.colors.sequential.YlOrRd,
             labels={'Rain': 'Amount of rainfall'},
             template='plotly_dark',
+            animation_frame='Month'
             )
     elif(option_slcted_right == 2):
       dff = df_car.copy()
-      dff = dff[dff["value"] == option_slcted_right]
+      #dff = dff[dff["value"] == option_slcted_right]
       max_value =dff.max().values
       min_value = dff.min().values
       print(max_value)
@@ -201,6 +202,7 @@ def update_graph_right(option_slcted_right):
            color_continuous_scale=px.colors.sequential.YlOrRd,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
+           animation_frame='Month'
     )
 
     return fig_right, max_value[4]
@@ -213,22 +215,24 @@ def update_graph_right(option_slcted_right):
     Input(dropdown_left, 'value')
 )
 def update_graph_left(option_slctd_left):
-    print(option_slctd_left)
-    print(type(option_slctd_left))
 
-    dff = df.copy()
-    dff = dff[dff["value"] == option_slctd_left]
+    #print(option_slctd_left)
+    #print(type(option_slctd_left))
+
+    dff = df_rain.copy()
+    #dff = dff[dff["value"] == option_slctd_left]
     # Plotly Express
     fig_left = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
         locations='state_code',
         scope="usa",
-        color='car',
+        color='Rain',
         hover_data=['State'],
         color_continuous_scale=px.colors.sequential.YlOrRd,
         labels={'Rain': 'Amount of rainfall'},
-        template='plotly_dark'
+        template='plotly_dark',
+        animation_frame='Month'
     )
 
 
