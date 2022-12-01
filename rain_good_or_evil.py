@@ -17,9 +17,11 @@ import plotly.graph_objects as go
 df = pd.read_csv("data_rain_csv.csv")
 df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
+df_economic= df.groupby(['State', 'value','Month', 'state_code'])[['Economic']].mean()
 df_all = df.groupby(['State', 'value','Month', 'RainTmp','RainTmp2', 'state_code', 'car'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
+df_economic.reset_index(inplace=True)
 df_all.reset_index(inplace=True)
 print(df[:5])
 
