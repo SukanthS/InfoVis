@@ -4,14 +4,24 @@ import plotly.express as px
 import pandas as pd      
 import plotly.graph_objects as go
       
+# navbar = dbc.NavbarSimple(
+#     children=[
+#         dbc.NavItem(dbc.NavLink("Page 1", href="#")),
+#         dbc.DropdownMenu(
+#             children=[
+#                 dbc.DropdownMenuItem("More pages", header=True),
+#                 dbc.DropdownMenuItem("Page 2", href="#"),
+#                 dbc.DropdownMenuItem("Page 3", href="#"),
 
 
 df = pd.read_csv("data_rain_csv.csv")
 df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
+df_economic= df.groupby(['State', 'value','Month', 'state_code'])[['economic']].mean()
 df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
+df_economic.reset_index(inplace=True)
 df_all.reset_index(inplace=True)
 print(df[:5])
 
@@ -46,12 +56,12 @@ dropdown_left = dcc.Dropdown(
                  style={'width': "40%"})
 dropdown_right = dcc.Dropdown(
                  options=[
-                     {"label": "Rain", "value": 1},
-                     {"label": "Car", "value": 2},
+                     {"label": "Car", "value": 1},
+                     {"label": "economic", "value": 2},
                      ],
                  multi=False,
                  value=1,
-                 style={'width': "60%"})
+                 style={'width': "40%"})
 
 distplot = dcc.Graph(figure={})
 
@@ -63,15 +73,16 @@ scatter = dcc.Graph(figure={})
 card_high_rain=  dbc.Card(
             dbc.CardBody(
                 [
-                    html.H5("50% width card", className="card-title"),
-                    html.P(
-                        [
-                            "This card uses the ",
-                            html.Code("w-50"),
-                            " class to set the width to 50%",
+                    html.H5("Highest Rainfall", className="card-title"),
+                    html.H5(
+                        ["State",
+                        dbc.Alert(id="rainfall_high"),
+                        "Value",
+                        dbc.Alert(id="rainfall_high_value")
                         ],
                         className="card-text",
                     ),
+                    
                 ]
             ),
             className="w-50",
@@ -80,48 +91,51 @@ card_high_rain=  dbc.Card(
 card_low_rain=  dbc.Card(
             dbc.CardBody(
                 [
-                    html.H5("50% width card", className="card-title"),
-                    html.P(
-                        [
-                            "This card uses the ",
-                            html.Code("w-50"),
-                            " class to set the width to 50%",
+                    html.H5("Lowest Rainfall", className="card-title"),
+                    html.H5(
+                        ["State",
+                        dbc.Alert(id="rainfall_low"),
+                        "Value",
+                        dbc.Alert(id="rainfall_low_value")
                         ],
                         className="card-text",
+                        
                     ),
-                    dbc.Alert(id="upload-alert")
+                  
                 ]
             ),
             className="w-50",
         )
 
-card_high_fill=  dbc.Card(
+card_low_fill=  dbc.Card(
             dbc.CardBody(
                 [
-                    html.H5("50% width card", className="card-title"),
-                    html.P(
-                        [
-                            "This card uses the ",
-                            html.Code("w-50"),
-                            " class to set the width to 50%",
+                    html.H5("Lowest Instances", className="card-title"),
+                    html.H5(
+                        ["State",
+                        dbc.Alert(id="fill_low"),
+                        "Value",
+                        dbc.Alert(id="fill_low_value")
                         ],
                         className="card-text",
+                        
                     ),
                 ]
             ),
             className="w-50",
         )
-card_low_fill=  dbc.Card(
+card_high_fill=  dbc.Card(
             dbc.CardBody(
                 [
-                    html.H5("50% width card", className="card-title"),
-                    html.P(
-                        [
-                            "This card uses the ",
-                            html.Code("w-50"),
-                            " class to set the width to 50%",
+                    html.H5("Highest Instances", className="card-title"),
+                    html.H5(
+                        ["State",
+                        dbc.Alert(id="fill_high"),
+                        "Value",
+                        dbc.Alert(id="fill_high_value")
                         ],
                         className="card-text",
+                        
                     ),
                 ]
             ),
@@ -163,14 +177,17 @@ app.layout = dbc.Container([
 
 @app.callback(
     Output(graph_right, 'figure'),
-    Output('upload-alert', 'children'),
+    Output('fill_low', 'children'),
+    Output('fill_low_value', 'children'),
+    Output('fill_high', 'children'),
+    Output('fill_high_value', 'children'),
     Input(dropdown_right, 'value')
 )
 def update_graph_right(option_slcted_right):
     print(option_slcted_right)
     print(type(option_slcted_right))
     if(option_slcted_right == 1):
-        dff = df_rain.copy()
+        dff = df_car.copy()
         #dff = dff[dff["value"] == option_slcted_right]
         max_value =dff.max().values
         min_value = dff.min().values
@@ -181,7 +198,7 @@ def update_graph_right(option_slcted_right):
             locationmode='USA-states',
             locations='state_code',
             scope="usa",
-            color='Rain',
+            color='car',
             hover_data=['State'],
             color_continuous_scale=px.colors.sequential.YlOrRd,
             labels={'Rain': 'Amount of rainfall'},
@@ -189,7 +206,7 @@ def update_graph_right(option_slcted_right):
             animation_frame='Month'
             )
     elif(option_slcted_right == 2):
-      dff = df_car.copy()
+      dff = df_economic.copy()
       #dff = dff[dff["value"] == option_slcted_right]
       max_value =dff.max().values
       min_value = dff.min().values
@@ -200,23 +217,25 @@ def update_graph_right(option_slcted_right):
            locationmode='USA-states',
            locations='state_code',
            scope="usa",
-           color='car',
+           color='economic',
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.YlOrRd,
            labels={'car': 'Amount of rainfall'},
            template='plotly_dark',
            animation_frame='Month'
     )
-    fig_right.update_layout(geo=dict(bgcolor= '#152236'))
-    fig_right.update_layout({
-    'paper_bgcolor': '#152336'})
 
-    return fig_right, max_value[4]
+
+    return fig_right,min_value[0], min_value[4], max_value[0], max_value[4]
 
 
 
 @app.callback(
     Output(graph_left, 'figure'),
+    Output('rainfall_high', 'children'),
+    Output('rainfall_high_value', 'children'),
+    Output('rainfall_low', 'children'),
+    Output('rainfall_low_value', 'children'),
     Output(distplot, "figure"), 
     Output(sunburst, 'figure'),
     Output(scatter, 'figure'), 
@@ -226,10 +245,11 @@ def update_graph_left(option_slctd_left):
 
     #print(option_slctd_left)
     #print(type(option_slctd_left))
-
     dff = df_rain.copy()
     #dff = dff[dff["value"] == option_slctd_left]
     # Plotly Express
+    max_value =dff.max().values
+    min_value = dff.min().values
     fig_left = px.choropleth(
         data_frame=dff,
         locationmode='USA-states',
@@ -242,19 +262,12 @@ def update_graph_left(option_slctd_left):
         template='plotly_dark',
         animation_frame='Month'
     )
-    fig_left.update_layout(geo=dict(bgcolor= '#152236'))
-    fig_left.update_layout({
-    'paper_bgcolor': '#152336'})
 
 
 
     fig2 = px.histogram(
         df, x="State", y="Rain", color="Month",
         hover_data=df.columns)
-    fig2.update_layout({
-    'paper_bgcolor': '#152336',
-    'plot_bgcolor':'#152336'
-    })
 
 
     
@@ -266,7 +279,7 @@ def update_graph_left(option_slctd_left):
            size_max=0.99999, range_x=[0.00000,0.99999], range_y=[0.00,5000.00])
 
 
-    return fig_left, fig2, fig3, fig4
+    return fig_left, max_value[0], max_value[4] ,min_value[0], min_value[4],fig2, fig3, fig4
 
 
 if __name__=='__main__':
