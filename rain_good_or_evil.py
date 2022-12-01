@@ -4,14 +4,6 @@ import plotly.express as px
 import pandas as pd      
 import plotly.graph_objects as go
       
-# navbar = dbc.NavbarSimple(
-#     children=[
-#         dbc.NavItem(dbc.NavLink("Page 1", href="#")),
-#         dbc.DropdownMenu(
-#             children=[
-#                 dbc.DropdownMenuItem("More pages", header=True),
-#                 dbc.DropdownMenuItem("Page 2", href="#"),
-#                 dbc.DropdownMenuItem("Page 3", href="#"),
 
 
 df = pd.read_csv("data_rain_csv.csv")
@@ -60,7 +52,7 @@ dropdown_right = dcc.Dropdown(
                      ],
                  multi=False,
                  value=1,
-                 style={'width': "40%"})
+                 style={'width': "60%"})
 
 distplot = dcc.Graph(figure={})
 
@@ -216,6 +208,9 @@ def update_graph_right(option_slcted_right):
            template='plotly_dark',
            animation_frame='Month'
     )
+    fig_right.update_layout(geo=dict(bgcolor= '#152236'))
+    fig_right.update_layout({
+    'paper_bgcolor': '#152336'})
 
     return fig_right, max_value[4]
 
@@ -248,12 +243,19 @@ def update_graph_left(option_slctd_left):
         template='plotly_dark',
         animation_frame='Month'
     )
+    fig_left.update_layout(geo=dict(bgcolor= '#152236'))
+    fig_left.update_layout({
+    'paper_bgcolor': '#152336'})
 
 
 
     fig2 = px.histogram(
         df, x="State", y="Rain", color="Month",
         hover_data=df.columns)
+    fig2.update_layout({
+    'paper_bgcolor': '#152336',
+    'plot_bgcolor':'#152336'
+    })
 
 
     
