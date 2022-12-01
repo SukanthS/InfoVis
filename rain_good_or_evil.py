@@ -61,7 +61,7 @@ dropdown_left = dcc.Dropdown(
 dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "Car", "value": 1},
-                     {"label": "economic", "value": 2},
+                     {"label": "Economic", "value": 2},
                      ],
                  multi=False,
                  value=1,
@@ -228,7 +228,7 @@ def update_graph_right(option_slcted_right):
            color='economic',
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.Purpor,
-           labels={'car': 'Amount of Rainfall'},
+           labels={'Car': 'Amount of Rainfall'},
            template='plotly_dark',
            animation_frame='Month'
     )
@@ -269,11 +269,15 @@ def update_graph_left(option_slctd_left):
         scope="usa",
         color='Rain',
         hover_data=['State'],
-        color_continuous_scale=px.colors.sequential.YlOrRd,
+        color_continuous_scale=px.colors.sequential.Sunsetdark,
         labels={'Rain': 'Amount of Rainfall'},
         template='plotly_dark',
         animation_frame='Month'
     )
+
+    fig_left.update_layout(geo=dict(bgcolor= '#152236'))   # Left Map Colours
+    fig_left.update_layout({
+    'paper_bgcolor': '#152336'})
 
     fig_left.update_layout(
         font=dict(
@@ -287,6 +291,17 @@ def update_graph_left(option_slctd_left):
     fig2 = px.histogram(
         df, x="State", y="Rain", color="Month",
         hover_data=df.columns)
+    fig2.update_layout(
+        font=dict(
+            family="Lucida Sans",
+            size=12,
+            color="white"
+        ),
+    )
+    fig2.update_layout({
+    'paper_bgcolor': '#152336',
+    'plot_bgcolor':'#152336'
+    })
     fig2.update_layout(
         font=dict(
             family="Lucida Sans",
