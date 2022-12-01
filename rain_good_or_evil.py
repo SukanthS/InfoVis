@@ -155,7 +155,7 @@ card_high_fill=  dbc.Card(
             className="w-100",
         )
 
-
+graph_desc = dcc.Markdown(className='desc')
 
 
 app.layout = dbc.Container([
@@ -176,6 +176,9 @@ app.layout = dbc.Container([
         dbc.Col([card_high_fill], class_name="cardStyle"),
         dbc.Col([card_low_fill], class_name="cardStyle"),
     ], class_name="cardRow"),
+    dbc.Row([
+        dbc.Col([graph_desc], className="title")
+    ], className='heading'),
     dbc.Row([
         dbc.Col([distplot]),
     ], class_name="bar"),
@@ -225,7 +228,7 @@ def update_graph_right(option_slcted_right):
             color='car',
             hover_data=['State'],
             color_continuous_scale=px.colors.sequential.Sunsetdark,
-            labels={'Car Accidentts': 'Car Accidents'},
+            labels={'car': 'Car Accidents'},
             template='plotly_dark',
             animation_frame='Month'
             )
@@ -247,7 +250,7 @@ def update_graph_right(option_slcted_right):
            color='economic',
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.BuGn,
-           labels={'car': 'Amount of rainfall'},
+           labels={'economic': 'Economic impact'},
            template='plotly_dark',
            animation_frame='Month'
     )
@@ -271,7 +274,7 @@ def update_graph_right(option_slcted_right):
            color='Airline',
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.Magenta,
-           labels={'car': 'Amount of rainfall'},
+           labels={'Airline': 'Cancellations'},
            template='plotly_dark',
            animation_frame='Month'
     )
@@ -279,7 +282,7 @@ def update_graph_right(option_slcted_right):
     elif(option_slcted_right == 4):
       dff = df_water.copy()
       flag = 'Water'
-      print(dff[:5])
+    #   print(dff[:5])
       #dff = dff[dff["value"] == option_slcted_right]
     #   max_value =dff.max().values
     #   min_value = dff.min().values
@@ -295,7 +298,7 @@ def update_graph_right(option_slcted_right):
            color="Water",
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.Brwnyl,
-           labels={'car': 'Amount of rainfall'},
+           labels={'Water': 'Groundwater'},
            template='plotly_dark',
            animation_frame='Month'
     )
@@ -319,7 +322,7 @@ def update_graph_right(option_slcted_right):
            color='Air',
            hover_data=['State'],
            color_continuous_scale=px.colors.sequential.Purpor,
-           labels={'car': 'Amount of rainfall'},
+           labels={'Air': 'Quality Index'},
            template='plotly_dark',
            animation_frame='Month'
     )
@@ -356,6 +359,7 @@ def update_graph_right(option_slcted_right):
     Output('rainfall_low_value', 'children'),
     Output(sunburst, 'figure'),
     Output(scatter, 'figure'), 
+    Output(graph_desc,'children'),
     Input(dropdown_scatter, 'value'),
     Input(dropdown_right,'value')
 
@@ -365,14 +369,19 @@ def update_graph_left(option_slctd_left,category):
     
     if(category == 1):
         value = 'car'
+        desc = 'Statewise comparison of car accidents'
     elif(category == 2):
         value = 'economic'
+        desc = 'Statewise comparison of economic impact'
     elif(category == 3):
         value = 'Airline'
+        desc = 'Statewise comparison of flight cancellations'
     elif(category == 4):
         value = 'Water'
+        desc = 'Statewise comparison of groundwater level'
     elif(category == 5):
         value = 'Air'
+        desc = 'Statewise comparison of Air Quality Index'
 
     #print(option_slctd_left)
     #print(type(option_slctd_left))
@@ -434,7 +443,7 @@ def update_graph_left(option_slctd_left,category):
     })
 
 
-    return fig_left, max_value_state, max_value_value , min_value_state, min_value_value, fig3, fig4
+    return fig_left, max_value_state, max_value_value , min_value_state, min_value_value, fig3, fig4, desc
 
 
 if __name__=='__main__':
