@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 df = pd.read_csv("data_rain_csv.csv")
 df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
-df_all = df.groupby(['State', 'value','Month', 'RainTmp','RainTmp2', 'state_code', 'car'])[['Rain']].mean()
+df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
 df_all.reset_index(inplace=True)
@@ -48,7 +48,6 @@ dropdown_right = dcc.Dropdown(
                  options=[
                      {"label": "Rain", "value": 1},
                      {"label": "Car", "value": 2},
-                     {"label": "Economic", "value": 2},
                      ],
                  multi=False,
                  value=1,
@@ -262,7 +261,7 @@ def update_graph_left(option_slctd_left):
     fig3 = px.sunburst(df_all, path=['State', 'Month'], values='Rain', color='State') 
 
     fig4 = px.scatter(
-        df_all, x="car", y="RainTmp2", animation_group="State",
+        df_all, x="car", y="economic", animation_group="State",
            size="Rain", color="Month", hover_name="State", facet_col="Month",
            size_max=0.99999, range_x=[0.00000,0.99999], range_y=[0.00,5000.00])
 
