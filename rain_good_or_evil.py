@@ -12,7 +12,7 @@ df_economic= df.groupby(['State', 'value','Month', 'state_code'])[['economic']].
 df_airline = df.groupby(['State', 'value','Month', 'state_code'])[['Airline']].mean()
 df_water = df.groupby(['State', 'value','Month', 'state_code'])[['Water']].mean()
 df_air = df.groupby(['State', 'value','Month', 'state_code'])[['Air']].mean()
-df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline','Water','Air'])[['Rain']].mean()
+df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline','Water','Air', 'vals'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
 df_economic.reset_index(inplace=True)
@@ -77,11 +77,12 @@ dropdown_scatter = dcc.Dropdown(
 
 distplot = dcc.Graph(figure={})
 
-sunburst = dcc.Graph(figure={})
+#sunburst = dcc.Graph(figure={})
 
 scatter = dcc.Graph(figure={})
 
-linegraph = dcc.Graph()
+#linegraph = dcc.Graph()
+parplot = dcc.Graph()
 
 card_high_rain=  dbc.Card(
             dbc.CardBody(
@@ -186,7 +187,7 @@ app.layout = dbc.Container([
         dbc.Col([dropdown_scatter], className="scatterDrop"),
     ]),
     dbc.Row([
-        dbc.Col([sunburst], class_name="sun"),
+        dbc.Col([parplot], class_name="par"),
         dbc.Col([scatter], class_name="scatter"),
     ], className="compare"),
     
@@ -357,12 +358,12 @@ def update_graph_right(option_slcted_right):
     Output('rainfall_high_value', 'children'),
     Output('rainfall_low', 'children'),
     Output('rainfall_low_value', 'children'),
-    Output(sunburst, 'figure'),
+    #Output(sunburst, 'figure'),
+    Output(parplot, 'figure'), 
     Output(scatter, 'figure'), 
     Output(graph_desc,'children'),
     Input(dropdown_scatter, 'value'),
     Input(dropdown_right,'value')
-
     #Input(dropdown_left, 'value')
 )
 def update_graph_left(option_slctd_left,category):
@@ -413,18 +414,41 @@ def update_graph_left(option_slctd_left,category):
     dff = df_all.copy()
     dff = df_all[df_all.State.str.contains('|'.join(option_slctd_left))]
 
-    fig3 = px.line(dff, x="Rain", y=value, color='State')
-    fig3.update_layout(
+    #fig3 = px.line(dff, x="Rain", y=value, color='State')
+    #fig3.update_layout(
+    #    font=dict(
+    #        family="Lucida Sans",
+    #        size=12,
+    #        color="white"
+    #    ),
+    #)
+    #fig3.update_layout({
+    #'paper_bgcolor': '#152336',
+    #'plot_bgcolor':'#152336'
+    #})
+
+    dfff = df_all.copy()
+    dfff = df_all[df_all.State.str.contains('|'.join(option_slctd_left))]
+
+    dfff = dfff[dfff.Month.str.contains('|'.join(['January']))]
+    
+
+    fig5 = px.parallel_coordinates(
+        dfff, 
+        color='vals', 
+        dimensions= ["Rain", "car", "economic", "Airline", "Air" ])
+    fig5.update_layout(
         font=dict(
             family="Lucida Sans",
             size=12,
             color="white"
         ),
     )
-    fig3.update_layout({
+    fig5.update_layout({
     'paper_bgcolor': '#152336',
     'plot_bgcolor':'#152336'
     })
+
 
     fig4 = px.scatter(
         dff, x="car", y="economic", animation_group="State", 
@@ -443,7 +467,7 @@ def update_graph_left(option_slctd_left,category):
     })
 
 
-    return fig_left, max_value_state, max_value_value , min_value_state, min_value_value, fig3, fig4, desc
+    return fig_left, max_value_state, max_value_value , min_value_state, min_value_value, fig5, fig4, desc
 
 
 if __name__=='__main__':
