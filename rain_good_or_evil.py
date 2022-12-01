@@ -61,7 +61,7 @@ dropdown_right = dcc.Dropdown(
                      {"label": "Air Quality Index", "value": 5},
                      ],
                  multi=False,
-                 value=3,
+                 value=1,
                  style={'width': "40%"})
 
 dropdown_scatter = dcc.Dropdown(
@@ -81,6 +81,7 @@ sunburst = dcc.Graph(figure={})
 
 scatter = dcc.Graph(figure={})
 
+linegraph = dcc.Graph()
 
 card_high_rain=  dbc.Card(
             dbc.CardBody(
@@ -346,10 +347,23 @@ def update_graph_right(option_slcted_right):
     Output('rainfall_low_value', 'children'),
     Output(sunburst, 'figure'),
     Output(scatter, 'figure'), 
-    Input(dropdown_scatter, 'value')
+    Input(dropdown_scatter, 'value'),
+    Input(dropdown_right,'value')
+
     #Input(dropdown_left, 'value')
 )
-def update_graph_left(option_slctd_left):
+def update_graph_left(option_slctd_left,category):
+    
+    if(category == 1):
+        value = 'car'
+    elif(category == 2):
+        value = 'economic'
+    elif(category == 3):
+        value = 'Airline'
+    elif(category == 4):
+        value = 'Water'
+    elif(category == 5):
+        value = 'Air'
 
     #print(option_slctd_left)
     #print(type(option_slctd_left))
@@ -377,10 +391,13 @@ def update_graph_left(option_slctd_left):
 
 
     
-    fig3 = px.sunburst(df_all, path=['State', 'Month'], values='Rain', color='State') 
+  
 
     dff = df_all.copy()
     dff = df_all[df_all.State.str.contains('|'.join(option_slctd_left))]
+
+    fig3 = px.line(dff, x="Rain", y=value, color='State')
+
     fig4 = px.scatter(
         dff, x="car", y="economic", animation_group="State",
            size="Rain", color="Month", hover_name="State", facet_col="Month",
