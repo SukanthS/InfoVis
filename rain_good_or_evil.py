@@ -10,11 +10,15 @@ df_car = df.groupby(['State', 'value','Month', 'state_code'])[['car']].mean()
 df_rain= df.groupby(['State', 'value','Month', 'state_code'])[['Rain']].mean()
 df_economic= df.groupby(['State', 'value','Month', 'state_code'])[['economic']].mean()
 df_airline = df.groupby(['State', 'value','Month', 'state_code'])[['Airline']].mean()
-df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline'])[['Rain']].mean()
+df_water = df.groupby(['State', 'value','Month', 'state_code'])[['Water ']].mean()
+df_air = df.groupby(['State', 'value','Month', 'state_code'])[['Air']].mean()
+df_all = df.groupby(['State', 'value','Month', 'state_code', 'car', 'economic', 'Airline','Water ','Air'])[['Rain']].mean()
 df_car.reset_index(inplace=True)
 df_rain.reset_index(inplace=True)
 df_economic.reset_index(inplace=True)
 df_airline.reset_index(inplace=True)
+df_water.reset_index(inplace=True)
+df_air.reset_index(inplace=True)
 df_all.reset_index(inplace=True)
 
 # print(df[:5])
@@ -53,6 +57,8 @@ dropdown_right = dcc.Dropdown(
                      {"label": "Car Accidents", "value": 1},
                      {"label": "Economic Impact", "value": 2},
                      {"label": "Flight Cancellations", "value": 3},
+                     {"label": "Groudwater Level", "value": 4},
+                     {"label": "Air Quality Index", "value": 5},
                      ],
                  multi=False,
                  value=3,
@@ -256,6 +262,47 @@ def update_graph_right(option_slcted_right):
            animation_frame='Month'
     )
 
+    elif(option_slcted_right == 4):
+      dff = df_water.copy()
+      print(dff[:5])
+      #dff = dff[dff["value"] == option_slcted_right]
+      max_value =dff.max().values
+      min_value = dff.min().values
+      print(max_value)
+      print(min_value)
+      fig_right = px.choropleth(
+           data_frame=dff,
+           locationmode='USA-states',
+           locations='state_code',
+           scope="usa",
+           color='Water ',
+           hover_data=['State'],
+           color_continuous_scale=px.colors.sequential.YlOrRd,
+           labels={'car': 'Amount of rainfall'},
+           template='plotly_dark',
+           animation_frame='Month'
+    )
+
+    elif(option_slcted_right == 5):
+      dff = df_air.copy()
+      print(dff[:5])
+      #dff = dff[dff["value"] == option_slcted_right]
+      max_value =dff.max().values
+      min_value = dff.min().values
+      print(max_value)
+      print(min_value)
+      fig_right = px.choropleth(
+           data_frame=dff,
+           locationmode='USA-states',
+           locations='state_code',
+           scope="usa",
+           color='Air',
+           hover_data=['State'],
+           color_continuous_scale=px.colors.sequential.YlOrRd,
+           labels={'car': 'Amount of rainfall'},
+           template='plotly_dark',
+           animation_frame='Month'
+    )
 
 
     return fig_right,min_value[0], min_value[4], max_value[0], max_value[4]
