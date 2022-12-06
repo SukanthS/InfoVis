@@ -28,6 +28,7 @@ df_bubble = px.data.gapminder().query("year==2007")
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 
 
